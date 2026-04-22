@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   :root {
@@ -51,18 +49,20 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
-.bg-gradient-acustard {
+.bg-gradient-aetherion {
   background: linear-gradient(135deg, #2351b7 0%, #9370db 100%);
 }
 
-.text-gradient-acustard {
+.text-gradient-aetherion {
   background: linear-gradient(135deg, #2351b7 0%, #9370db 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -39,7 +39,7 @@ export function Navbar() {
     // Scroll to top
     window.scrollTo({
       top: 0,
-      behavior: "instant",
+      behavior: "auto",
     })
   }
 
