@@ -1,0 +1,16 @@
+/* Ensure AI assistant is visible */
+.ai-assistant-button {
+  position: fixed !important;
+  bottom: 6rem !important;
+  right: 1.5rem !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  border-radius: 9999px !important;
+  background-color: #2351b7 !important;
+  color: white !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
