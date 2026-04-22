@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { Facebook, Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react"
+import {  Mail, MapPin, Phone } from "lucide-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
@@ -122,7 +122,7 @@ export function Footer() {
                 transform their digital presence and achieve their business goals.
               </p>
               <div className="flex gap-4">
-                <motion.a
+                {/* <motion.a
                   href="#"
                   className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300"
                   whileHover={{ scale: 1.2, rotate: 5 }}
@@ -130,8 +130,8 @@ export function Footer() {
                 >
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
-                </motion.a>
-                <motion.a
+                </motion.a> */}
+                {/* <motion.a
                   href="#"
                   className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300"
                   whileHover={{ scale: 1.2, rotate: 5 }}
@@ -139,8 +139,8 @@ export function Footer() {
                 >
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
-                </motion.a>
-                <motion.a
+                </motion.a> */}
+                {/* <motion.a
                   href="#"
                   className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300"
                   whileHover={{ scale: 1.2, rotate: 5 }}
@@ -148,8 +148,8 @@ export function Footer() {
                 >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
-                </motion.a>
-                <motion.a
+                </motion.a> */}
+                {/* <motion.a
                   href="#"
                   className="text-muted-foreground hover:text-acustard-violet transition-colors duration-300"
                   whileHover={{ scale: 1.2, rotate: 5 }}
@@ -157,7 +157,7 @@ export function Footer() {
                 >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
-                </motion.a>
+                </motion.a> */}
               </div>
             </div>
             <div className="space-y-4">
