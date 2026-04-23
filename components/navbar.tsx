@@ -70,7 +70,7 @@ export function Navbar() {
         {isMobile ? (
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="outline" size="icon" className="md:hidden bg-white text-black border-gray-300 hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
@@ -88,60 +88,42 @@ export function Navbar() {
               </div>
               <nav className="flex flex-col gap-4 mt-8">
                 {navItems.map((item) => (
-                  <a
+                  <Button
                     key={item.name}
-                    href={item.href}
-                    className="text-lg font-medium transition-colors hover:text-primary relative overflow-hidden group"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      handleNavigation(item.href)
-                    }}
+                    variant="ghost"
+                    className="justify-start text-lg font-medium bg-white text-black hover:bg-acustard-blue hover:text-white transition-colors duration-300"
+                    onClick={() => handleNavigation(item.href)}
                   >
-                    <span className="relative z-10">{item.name}</span>
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-acustard-blue to-acustard-violet group-hover:w-full transition-all duration-300"></span>
-                  </a>
-                ))}
-                <a
-                  href="/contact"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    handleNavigation("/contact")
-                  }}
-                >
-                  <Button className="w-full mt-4 bg-acustard-blue hover:bg-acustard-violet transition-colors duration-300">
-                    Contact Us
+                    {item.name}
                   </Button>
-                </a>
+                ))}
+                <Button
+                  className="w-full mt-4 bg-acustard-blue hover:bg-acustard-violet text-white transition-colors duration-300"
+                  onClick={() => handleNavigation("/contact")}
+                >
+                  Contact Us
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>
         ) : (
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-4">
             {navItems.map((item) => (
-              <a
+              <Button
                 key={item.name}
-                href={item.href}
-                className="text-sm font-medium transition-colors hover:text-primary relative overflow-hidden group"
-                onClick={(e) => {
-                  e.preventDefault()
-                  handleNavigation(item.href)
-                }}
+                variant="ghost"
+                className="text-sm font-medium bg-white text-black hover:bg-acustard-blue hover:text-white transition-colors duration-300"
+                onClick={() => handleNavigation(item.href)}
               >
-                <span className="relative z-10">{item.name}</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-acustard-blue to-acustard-violet group-hover:w-full transition-all duration-300"></span>
-              </a>
-            ))}
-            <a
-              href="/contact"
-              onClick={(e) => {
-                e.preventDefault()
-                handleNavigation("/contact")
-              }}
-            >
-              <Button className="bg-acustard-blue hover:bg-acustard-violet transition-all duration-300 hover:shadow-lg hover:shadow-acustard-blue/20">
-                Contact Us
+                {item.name}
               </Button>
-            </a>
+            ))}
+            <Button
+              className="bg-acustard-blue hover:bg-acustard-violet text-white transition-all duration-300 hover:shadow-lg hover:shadow-acustard-blue/20"
+              onClick={() => handleNavigation("/contact")}
+            >
+              Contact Us
+            </Button>
           </nav>
         )}
       </div>

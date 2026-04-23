@@ -306,7 +306,7 @@ export default function ServicesPage() {
                 <Link href="/portfolio">
                   <Button
                     variant="outline"
-                    className="text-acustard-blue hover:bg-acustard-violet hover:text-white"
+                    className="text-acustard-blue hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300"
                     size="lg"
                   >
                     View Our Work

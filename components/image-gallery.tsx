@@ -68,14 +68,14 @@ export function ImageGallery({ images, className = "" }: ImageGalleryProps) {
 
       {images.length > 1 && (
         <div className="flex items-center justify-between p-2">
-          <Button variant="outline" size="icon" onClick={prevImage} className="rounded-full">
+          <Button variant="outline" size="icon" onClick={prevImage} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
             <ChevronLeft className="h-4 w-4" />
             <span className="sr-only">Previous image</span>
           </Button>
           <div className="text-sm text-muted-foreground">
             {currentIndex + 1} of {images.length}
           </div>
-          <Button variant="outline" size="icon" onClick={nextImage} className="rounded-full">
+          <Button variant="outline" size="icon" onClick={nextImage} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
             <ChevronRight className="h-4 w-4" />
             <span className="sr-only">Next image</span>
           </Button>

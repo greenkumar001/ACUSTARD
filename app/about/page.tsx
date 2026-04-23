@@ -238,7 +238,7 @@ export default function AboutPage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="text-acustard-blue hover:bg-acustard-violet hover:text-white border-acustard-blue"
+                    className="text-acustard-blue hover:bg-acustard-blue hover:text-white border-acustard-blue transition-colors duration-300"
                   >
                     Explore Our Services
                   </Button>

@@ -181,7 +181,7 @@ export function AiAssistant() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:bg-acustard-blue/80"
+                  className="text-white hover:bg-acustard-blue hover:text-white transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   <X className="h-4 w-4" />

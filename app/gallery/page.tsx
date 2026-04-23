@@ -177,7 +177,7 @@ export default function GalleryPage() {
                   </Button>
                 </Link>
                 <Link href="/portfolio">
-                  <Button variant="outline" size="lg">
+                  <Button variant="outline" size="lg" className="hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
                     View Our Portfolio
                   </Button>
                 </Link>

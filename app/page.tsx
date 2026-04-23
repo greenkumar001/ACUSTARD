@@ -178,7 +178,7 @@ export default function Home() {
                     <Button className="bg-acustard-blue hover:bg-acustard-violet">Learn More About Us</Button>
                   </Link>
                   <Link href="/contact">
-                    <Button variant="outline" className="hover:bg-acustard-blue hover:text-card-foreground">
+                    <Button variant="outline" className="hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
                       Contact Us
                     </Button>
                   </Link>

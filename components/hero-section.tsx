@@ -142,7 +142,7 @@ export function HeroSection() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-acustard-blue text-acustard-blue hover:bg-acustard-blue/10 transition-all duration-300"
+                    className="border-acustard-blue text-acustard-blue hover:bg-acustard-blue hover:text-white transition-all duration-300"
                   >
                     Our Services
                   </Button>

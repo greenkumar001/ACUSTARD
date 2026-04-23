@@ -70,13 +70,13 @@ export function ProjectShowcase() {
       </div>
 
       <div className="flex items-center justify-between p-4 border-t">
-        <Button variant="outline" size="icon" onClick={prevProject} className="rounded-full">
+        <Button variant="outline" size="icon" onClick={prevProject} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
           <ChevronLeft className="h-4 w-4" />
         </Button>
         <div className="text-sm text-muted-foreground">
           {currentIndex + 1} of {projects.length}
         </div>
-        <Button variant="outline" size="icon" onClick={nextProject} className="rounded-full">
+        <Button variant="outline" size="icon" onClick={nextProject} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
           <ChevronRight className="h-4 w-4" />
         </Button>
       </div>
