@@ -44,7 +44,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group" onClick={() => handleNavigation("/")}>
           <motion.div
@@ -60,7 +60,7 @@ export function Navbar() {
             />
           </motion.div>
           <motion.span
-            className="text-xl font-bold tracking-tight group-hover:text-gradient-acustard transition-all duration-300"
+            className="text-xl font-bold tracking-tight group-hover:text-gradient transition-all duration-300"
             whileHover={{ scale: 1.02 }}
           >
             ACUSTARD TECHNOLOGIES
@@ -70,16 +70,16 @@ export function Navbar() {
         {isMobile ? (
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden bg-white text-black border-gray-300 hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+              <Button variant="outline" size="icon" className="md:hidden  text-black border-gray-300 hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="right" className="w-300px sm:w-400px">
               <div className="flex justify-center mb-8 mt-6">
                 <div className="relative h-16 w-16">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Aeth%20%281%29.jpg-yWhA0h3HB7eG2n1GkqtErukc3XCJLh.jpeg"
+                    src="/ACUSTARD.jpeg"
                     alt="acustard TECHNOLOGIES Logo"
                     fill
                     className="object-contain"
@@ -91,14 +91,14 @@ export function Navbar() {
                   <Button
                     key={item.name}
                     variant="ghost"
-                    className="justify-start text-lg font-medium bg-white text-black hover:bg-acustard-blue hover:text-white transition-colors duration-300"
+                    className="justify-start text-lg font-medium text-black hover:bg-blue-700 hover:text-white transition-colors duration-300"
                     onClick={() => handleNavigation(item.href)}
                   >
                     {item.name}
                   </Button>
                 ))}
                 <Button
-                  className="w-full mt-4 bg-acustard-blue hover:bg-acustard-violet text-white transition-colors duration-300"
+                  className="w-full mt-4 bg-blue-700 hover:bg-violet-600  transition-colors duration-300"
                   onClick={() => handleNavigation("/contact")}
                 >
                   Contact Us
@@ -112,14 +112,14 @@ export function Navbar() {
               <Button
                 key={item.name}
                 variant="ghost"
-                className="text-sm font-medium bg-white text-black hover:bg-acustard-blue hover:text-white transition-colors duration-300"
+                className="text-sm font-medium  text-black hover:bg-blue-700 hover:text-white transition-colors duration-300"
                 onClick={() => handleNavigation(item.href)}
               >
                 {item.name}
               </Button>
             ))}
             <Button
-              className="bg-acustard-blue hover:bg-acustard-violet text-white transition-all duration-300 hover:shadow-lg hover:shadow-acustard-blue/20"
+              className="bg-blue-700 hover:bg-violet-600  transition-all duration-300 hover:shadow-lg hover:shadow-blue-700/20"
               onClick={() => handleNavigation("/contact")}
             >
               Contact Us

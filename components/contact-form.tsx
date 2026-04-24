@@ -104,11 +104,11 @@ export function ContactForm() {
           placeholder="How can we help you?"
           value={formData.message}
           onChange={handleChange}
-          className="min-h-[120px]"
+          className="min-h-120px"
           required
         />
       </div>
-      <Button type="submit" className="w-full bg-acustard-blue hover:bg-acustard-violet" disabled={isSubmitting}>
+      <Button type="submit" className="w-full bg-blue-700 hover:bg-violet-600" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </form>

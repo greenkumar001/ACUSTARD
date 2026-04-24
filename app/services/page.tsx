@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10 relative">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10 relative">
           {/* Background image */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         {/* Design Services Section */}
         <section id="design" className="w-full py-12 md:py-24 lg:py-32 relative">
           {/* Background image */}
-          <div className="absolute inset-0 z-0 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
             <Image
               src={IMAGES.backgrounds.design || "/placeholder.svg"}
               alt="Design background"
@@ -139,25 +139,25 @@ export default function ServicesPage() {
                 </p>
                 <ul className="grid gap-3">
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-blue" />
+                    <ArrowRight className="h-4 w-4 text-blue-700" />
                     <span>Logo Design</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-violet" />
+                    <ArrowRight className="h-4 w-4 text-violet-600" />
                     <span>Brochure Design</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-blue" />
+                    <ArrowRight className="h-4 w-4 text-blue-700" />
                     <span>UI/UX Design</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-violet" />
+                    <ArrowRight className="h-4 w-4 text-violet-600" />
                     <span>Brand Identity Development</span>
                   </li>
                 </ul>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/portfolio">
-                    <Button className="bg-acustard-blue hover:bg-acustard-violet">View Our Portfolio</Button>
+                    <Button className="bg-blue-700 hover:bg-violet-600">View Our Portfolio</Button>
                   </Link>
                 </div>
               </div>
@@ -190,19 +190,19 @@ export default function ServicesPage() {
                 </p>
                 <ul className="grid gap-3">
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-blue" />
+                    <ArrowRight className="h-4 w-4 text-blue-700" />
                     <span>Search Engine Optimization (SEO)</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-violet" />
+                    <ArrowRight className="h-4 w-4 text-violet-600" />
                     <span>Social Media Marketing</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-blue" />
+                    <ArrowRight className="h-4 w-4 text-blue-700" />
                     <span>Content Marketing</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-violet" />
+                    <ArrowRight className="h-4 w-4 text-violet-600" />
                     <span>Email Marketing Campaigns</span>
                   </li>
                 </ul>
@@ -256,19 +256,19 @@ export default function ServicesPage() {
                 </p>
                 <ul className="grid gap-3">
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-blue" />
+                    <ArrowRight className="h-4 w-4 text-blue-700" />
                     <span>IT Strategy Development</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-violet" />
+                    <ArrowRight className="h-4 w-4 text-violet-600" />
                     <span>Technology Assessment</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-blue" />
+                    <ArrowRight className="h-4 w-4 text-blue-700" />
                     <span>Digital Transformation</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-acustard-violet" />
+                    <ArrowRight className="h-4 w-4 text-violet-600" />
                     <span>IT Infrastructure Planning</span>
                   </li>
                 </ul>
@@ -299,7 +299,7 @@ export default function ServicesPage() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/contact">
-                  <Button className="bg-acustard-blue hover:bg-acustard-violet" size="lg">
+                  <Button className="bg-blue-700 hover:bg-violet-600" size="lg">
                     Contact Us
                   </Button>
                 </Link>

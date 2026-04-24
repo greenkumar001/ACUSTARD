@@ -50,7 +50,7 @@ export function StatsCounter({ end, duration = 2, label, icon }: StatsCounterPro
       transition={{ duration: 0.5 }}
       className="flex flex-col items-center justify-center space-y-2 text-center"
     >
-      <div className="text-4xl md:text-5xl font-bold text-gradient-acustard">{count}+</div>
+      <div className="text-4xl md:text-5xl font-bold text-gradient">{count}+</div>
       <div className="flex items-center gap-2">
         {icon && <span>{icon}</span>}
         <span className="text-sm md:text-base font-medium">{label}</span>

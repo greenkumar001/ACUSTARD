@@ -40,7 +40,7 @@ export default function PortfolioDetailPage({ params }: { params: { id: string }
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-aetherion-blue/10 to-aetherion-violet/10">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -80,7 +80,7 @@ export default function PortfolioDetailPage({ params }: { params: { id: string }
                 <div className="grid grid-cols-2 gap-4">
                   <Card>
                     <CardContent className="p-4 flex items-center gap-3">
-                      <Calendar className="h-5 w-5 text-aetherion-blue" />
+                      <Calendar className="h-5 w-5 text-blue-700" />
                       <div>
                         <p className="text-sm font-medium">Project Duration</p>
                         <p className="text-xs text-muted-foreground">3 months</p>
@@ -89,7 +89,7 @@ export default function PortfolioDetailPage({ params }: { params: { id: string }
                   </Card>
                   <Card>
                     <CardContent className="p-4 flex items-center gap-3">
-                      <User className="h-5 w-5 text-aetherion-violet" />
+                      <User className="h-5 w-5 text-violet-600" />
                       <div>
                         <p className="text-sm font-medium">Client</p>
                         <p className="text-xs text-muted-foreground">
@@ -114,114 +114,114 @@ export default function PortfolioDetailPage({ params }: { params: { id: string }
                   {project.title === "E-Commerce Platform" ? (
                     <>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Advanced product filtering and search</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Secure payment processing with multiple gateways</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Real-time inventory management</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Customer account management and order history</span>
                       </li>
                     </>
                   ) : project.title === "Brand Identity" ? (
                     <>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Logo design with multiple variations</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Business cards and letterhead design</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Brand color palette and typography</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Comprehensive brand guidelines document</span>
                       </li>
                     </>
                   ) : project.title === "SEO Campaign" ? (
                     <>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Keyword research and optimization</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Content strategy and creation</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Technical SEO improvements</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Link building and outreach</span>
                       </li>
                     </>
                   ) : project.title === "Mobile Banking App" ? (
                     <>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Biometric authentication</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Real-time transaction monitoring</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Bill payment and fund transfers</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Personalized financial insights</span>
                       </li>
                     </>
                   ) : project.title === "Product Brochure" ? (
                     <>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Professional product photography</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Compelling copywriting</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Brand-aligned design elements</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Print and digital versions</span>
                       </li>
                     </>
                   ) : (
                     <>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Content creation and scheduling</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Community management</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-blue mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                         <span>Targeted advertising campaigns</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-aetherion-violet mt-0.5 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                         <span>Performance analytics and reporting</span>
                       </li>
                     </>
@@ -258,7 +258,7 @@ export default function PortfolioDetailPage({ params }: { params: { id: string }
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-aetherion-blue/10 to-aetherion-violet/10">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -271,7 +271,7 @@ export default function PortfolioDetailPage({ params }: { params: { id: string }
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-aetherion-blue hover:bg-aetherion-violet">
+                  <Button size="lg" className="bg-blue-700 hover:bg-violet-600">
                     Contact Us
                   </Button>
                 </Link>

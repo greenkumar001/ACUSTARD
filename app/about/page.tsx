@@ -16,7 +16,7 @@ export default function AboutPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10 relative overflow-hidden">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10 relative overflow-hidden">
           {/* Background image */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -29,8 +29,8 @@ export default function AboutPage() {
 
           {/* Background decorative elements */}
           <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-            <div className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-acustard-blue/5 rounded-full blur-3xl"></div>
-            <div className="absolute top-[60%] -right-[10%] w-[40%] h-[40%] bg-acustard-violet/5 rounded-full blur-3xl"></div>
+            <div className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-blue-700/5 rounded-full blur-3xl"></div>
+            <div className="absolute top-[60%] -right-[10%] w-[40%] h-[40%] bg-violet-600/5 rounded-full blur-3xl"></div>
           </div>
 
           <div className="container px-4 md:px-6 relative z-10">
@@ -58,8 +58,8 @@ export default function AboutPage() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-acustard-blue/20 rounded-full blur-lg"></div>
-                  <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-acustard-violet/20 rounded-full blur-lg"></div>
+                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-blue-700/20 rounded-full blur-lg"></div>
+                  <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-violet-600/20 rounded-full blur-lg"></div>
                   <Image
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                     alt="ACUSTARD team"
@@ -105,7 +105,7 @@ export default function AboutPage() {
         {/* Our Values Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 relative">
           {/* Background image */}
-          <div className="absolute inset-0 z-0 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
             <Image
               src={IMAGES.backgrounds.abstract || "/placeholder.svg"}
               alt="Abstract technology background"
@@ -126,7 +126,7 @@ export default function AboutPage() {
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
               <Card>
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Zap className="h-10 w-10 text-acustard-blue mb-2" />
+                  <Zap className="h-10 w-10 text-blue-700 mb-2" />
                   <h3 className="text-xl font-bold">Innovation</h3>
                   <p className="text-sm text-muted-foreground">
                     We embrace new technologies and creative solutions to solve complex problems.
@@ -135,7 +135,7 @@ export default function AboutPage() {
               </Card>
               <Card>
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Award className="h-10 w-10 text-acustard-violet mb-2" />
+                  <Award className="h-10 w-10 text-violet-600 mb-2" />
                   <h3 className="text-xl font-bold">Excellence</h3>
                   <p className="text-sm text-muted-foreground">
                     We strive for excellence in everything we do, from code quality to client service.
@@ -144,7 +144,7 @@ export default function AboutPage() {
               </Card>
               <Card>
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Users className="h-10 w-10 text-acustard-blue mb-2" />
+                  <Users className="h-10 w-10 text-blue-700 mb-2" />
                   <h3 className="text-xl font-bold">Collaboration</h3>
                   <p className="text-sm text-muted-foreground">
                     We believe in the power of teamwork and partnership with our clients.
@@ -153,7 +153,7 @@ export default function AboutPage() {
               </Card>
               <Card>
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Clock className="h-10 w-10 text-acustard-violet mb-2" />
+                  <Clock className="h-10 w-10 text-violet-600 mb-2" />
                   <h3 className="text-xl font-bold">Reliability</h3>
                   <p className="text-sm text-muted-foreground">We deliver on our promises and stand behind our work.</p>
                 </CardContent>
@@ -187,8 +187,8 @@ export default function AboutPage() {
               {IMAGES.team_members.map((member, index) => (
                 <div key={member.name} className="flex flex-col items-center space-y-4">
                   <div className="relative">
-                    <div className="absolute -top-2 -left-2 w-8 h-8 bg-acustard-blue/20 rounded-full blur-md"></div>
-                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-acustard-violet/20 rounded-full blur-md"></div>
+                    <div className="absolute -top-2 -left-2 w-8 h-8 bg-blue-700/20 rounded-full blur-md"></div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-violet-600/20 rounded-full blur-md"></div>
                     <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
@@ -199,7 +199,7 @@ export default function AboutPage() {
                   </div>
                   <div className="text-center">
                     <h3 className="text-xl font-bold">{member.name}</h3>
-                    <p className="text-sm text-acustard-blue">{member.role}</p>
+                    <p className="text-sm text-blue-700">{member.role}</p>
                     <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
         {/* CTA Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 relative">
           {/* Background image */}
-          <div className="absolute inset-0 z-0 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
             <Image
               src={IMAGES.backgrounds.gradient || "/placeholder.svg"}
               alt="Gradient background"
@@ -230,7 +230,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-acustard-blue hover:bg-acustard-violet">
+                  <Button size="lg" className="bg-blue-700 hover:bg-violet-600">
                     Contact Us
                   </Button>
                 </Link>
@@ -238,7 +238,7 @@ export default function AboutPage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="text-acustard-blue hover:bg-acustard-blue hover:text-white border-acustard-blue transition-colors duration-300"
+                    className="text-blue-700 hover:bg-blue-700 hover:text-white border-blue-700 transition-colors duration-300"
                   >
                     Explore Our Services
                   </Button>

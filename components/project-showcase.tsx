@@ -61,7 +61,7 @@ export function ProjectShowcase() {
           {currentProject.technologies.map((tech) => (
             <span
               key={tech}
-              className="inline-flex items-center rounded-full bg-acustard-blue/10 px-2.5 py-0.5 text-xs font-medium text-acustard-blue"
+              className="inline-flex items-center rounded-full bg-blue-700/10 px-2.5 py-0.5 text-xs font-medium text-blue-700"
             >
               {tech}
             </span>
@@ -70,13 +70,13 @@ export function ProjectShowcase() {
       </div>
 
       <div className="flex items-center justify-between p-4 border-t">
-        <Button variant="outline" size="icon" onClick={prevProject} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+        <Button variant="outline" size="icon" onClick={prevProject} className="rounded-full hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
           <ChevronLeft className="h-4 w-4" />
         </Button>
         <div className="text-sm text-muted-foreground">
           {currentIndex + 1} of {projects.length}
         </div>
-        <Button variant="outline" size="icon" onClick={nextProject} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+        <Button variant="outline" size="icon" onClick={nextProject} className="rounded-full hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
           <ChevronRight className="h-4 w-4" />
         </Button>
       </div>

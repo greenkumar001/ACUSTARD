@@ -32,7 +32,7 @@ export function Footer() {
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <MapPin className="h-6 w-6 text-acustard-blue shrink-0 mt-1" />
+              <MapPin className="h-6 w-6 text-blue-700 shrink-0 mt-1" />
               <div>
                 <h3 className="font-medium mb-2">Our Location</h3>
                 <p className="text-sm text-muted-foreground">
@@ -47,21 +47,21 @@ export function Footer() {
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Mail className="h-6 w-6 text-acustard-violet shrink-0 mt-1" />
+              <Mail className="h-6 w-6 text-violet-600 shrink-0 mt-1" />
               <div>
                 <h3 className="font-medium mb-2">Email Us</h3>
                 <p className="text-sm text-muted-foreground">
                   <a
                     href="mailto:acustardtechnologies@gmail.com"
-                    className="hover:text-acustard-blue transition-colors duration-300"
+                    className="hover:text-blue-700 transition-colors duration-300"
                   >
                     acustardtechnologies@gmail.com
                   </a>
                 </p>
                 <p className="text-sm text-muted-foreground">
                   <a
-                    href="mailto:acustardtechnologies@gmail.com"
-                    className="hover:text-acustard-blue transition-colors duration-300"
+                    href="mailto:support@acustardtech.com"
+                    className="hover:text-blue-700 transition-colors duration-300"
                   >
                     support@acustardtech.com
                   </a>
@@ -73,16 +73,16 @@ export function Footer() {
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Phone className="h-6 w-6 text-acustard-blue shrink-0 mt-1" />
+              <Phone className="h-6 w-6 text-blue-700 shrink-0 mt-1" />
               <div>
                 <h3 className="font-medium mb-2">Call Us</h3>
                 <p className="text-sm text-muted-foreground">
-                  <a href="tel:+919145376420" className="hover:text-acustard-blue transition-colors duration-300">
+                  <a href="tel:+919145376420" className="hover:text-blue-700 transition-colors duration-300">
                     +91 91453 76420
                   </a>
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <a href="tel:+918275723209" className="hover:text-acustard-blue transition-colors duration-300">
+                  <a href="tel:+918275723209" className="hover:text-blue-700 transition-colors duration-300">
                     +91 82757 23210
                   </a>
                 </p>
@@ -113,7 +113,7 @@ export function Footer() {
                     className="object-contain"
                   />
                 </div>
-                <span className="text-xl font-bold tracking-tight group-hover:text-gradient-acustard transition-all duration-300">
+                <span className="text-xl font-bold tracking-tight group-hover:bg-gradient-to-r group-hover:from-acustard-blue group-hover:to-acustard-violet group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   ACUSTARD TECHNOLOGIES
                 </span>
               </a>
@@ -166,66 +166,66 @@ export function Footer() {
                 <li>
                   <a
                     href="/about"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/about")
                     }}
                   >
                     <span>About Us</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/team"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/team")
                     }}
                   >
                     <span>Our Team</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/careers"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/careers")
                     }}
                   >
                     <span>Careers</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/contact"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/contact")
                     }}
                   >
                     <span>Contact Us</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/gallery"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/gallery")
                     }}
                   >
                     <span>Gallery</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
               </ul>
@@ -236,66 +236,66 @@ export function Footer() {
                 <li>
                   <a
                     href="/services#software"
-                    className="text-muted-foreground hover:text-acustard-violet transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/services#software")
                     }}
                   >
                     <span>Software Development</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-violet group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/services#design"
-                    className="text-muted-foreground hover:text-acustard-violet transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/services#design")
                     }}
                   >
                     <span>Logo & Brochure Design</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-violet group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/services#marketing"
-                    className="text-muted-foreground hover:text-acustard-violet transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/services#marketing")
                     }}
                   >
                     <span>Digital Marketing</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-violet group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/services#consulting"
-                    className="text-muted-foreground hover:text-acustard-violet transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/services#consulting")
                     }}
                   >
                     <span>IT Consulting</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-violet group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/portfolio"
-                    className="text-muted-foreground hover:text-acustard-violet transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/portfolio")
                     }}
                   >
                     <span>Portfolio</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-violet group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
               </ul>
@@ -306,53 +306,53 @@ export function Footer() {
                 <li>
                   <a
                     href="/privacy"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/privacy")
                     }}
                   >
                     <span>Privacy Policy</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/terms"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/terms")
                     }}
                   >
                     <span>Terms of Service</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/cookies"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/cookies")
                     }}
                   >
                     <span>Cookie Policy</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="/sitemap"
-                    className="text-muted-foreground hover:text-acustard-blue transition-colors duration-300 relative group"
+                    className="text-muted-foreground hover:text-blue-700 transition-colors duration-300 relative group"
                     onClick={(e) => {
                       e.preventDefault()
                       handleNavigation("/sitemap")
                     }}
                   >
                     <span>Sitemap</span>
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-acustard-blue group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </li>
               </ul>
@@ -375,7 +375,7 @@ export function Footer() {
                 href="https://www.freepik.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-acustard-blue transition-colors duration-300"
+                className="underline hover:text-blue-700 transition-colors duration-300"
               >
                 Freepik
               </a>

@@ -53,7 +53,7 @@ export function ImageGallery({ images, className = "" }: ImageGalleryProps) {
             </Button>
           </DialogTrigger>
           <DialogContent className="max-w-4xl p-0 overflow-hidden">
-            <div className="relative aspect-[16/9] w-full">
+            <div className="relative aspect-16/9 w-full">
               <Image
                 src={images[currentIndex].src || "/placeholder.svg"}
                 alt={images[currentIndex].alt}
@@ -68,14 +68,14 @@ export function ImageGallery({ images, className = "" }: ImageGalleryProps) {
 
       {images.length > 1 && (
         <div className="flex items-center justify-between p-2">
-          <Button variant="outline" size="icon" onClick={prevImage} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+          <Button variant="outline" size="icon" onClick={prevImage} className="rounded-full hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
             <ChevronLeft className="h-4 w-4" />
             <span className="sr-only">Previous image</span>
           </Button>
           <div className="text-sm text-muted-foreground">
             {currentIndex + 1} of {images.length}
           </div>
-          <Button variant="outline" size="icon" onClick={nextImage} className="rounded-full hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+          <Button variant="outline" size="icon" onClick={nextImage} className="rounded-full hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
             <ChevronRight className="h-4 w-4" />
             <span className="sr-only">Next image</span>
           </Button>

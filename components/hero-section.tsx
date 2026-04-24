@@ -54,7 +54,7 @@ export function HeroSection() {
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <motion.div
-          className="absolute top-[20%] left-[10%] w-[300px] h-[300px] bg-acustard-blue/10 rounded-full blur-3xl"
+          className="absolute top-[20%] left-[10%] w-[300px] h-[300px] bg-blue/10 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.5, 0.8, 0.5],
@@ -66,7 +66,7 @@ export function HeroSection() {
           }}
         />
         <motion.div
-          className="absolute bottom-[20%] right-[10%] w-[300px] h-[300px] bg-acustard-violet/10 rounded-full blur-3xl"
+          className="absolute bottom-[20%] right-[10%] w-[300px] h-[300px] bg-violet-500/10 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.5, 0.8, 0.5],
@@ -107,7 +107,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gradient-acustard"
+                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gradient"
               >
                 ACUSTARD TECHNOLOGIES
               </motion.h1>
@@ -130,7 +130,7 @@ export function HeroSection() {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
                     size="lg"
-                    className="group bg-acustard-blue hover:bg-acustard-violet transition-all duration-300 hover:shadow-lg hover:shadow-acustard-blue/20"
+                    className="group bg-blue-700 hover:bg-violet-600 transition-all duration-300 hover:shadow-lg hover:shadow-blue-700/20"
                   >
                     Get Started
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -142,7 +142,7 @@ export function HeroSection() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-acustard-blue text-acustard-blue hover:bg-acustard-blue hover:text-white transition-all duration-300"
+                    className="border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white transition-all duration-300"
                   >
                     Our Services
                   </Button>
@@ -162,7 +162,7 @@ export function HeroSection() {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <motion.div
-                className="absolute -top-4 -left-4 w-16 h-16 bg-acustard-blue/20 rounded-full blur-lg"
+                className="absolute -top-4 -left-4 w-16 h-16 bg-blue-700/20 rounded-full blur-lg"
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.7, 1, 0.7],
@@ -174,7 +174,7 @@ export function HeroSection() {
                 }}
               />
               <motion.div
-                className="absolute -bottom-4 -right-4 w-16 h-16 bg-acustard-violet/20 rounded-full blur-lg"
+                className="absolute -bottom-4 -right-4 w-16 h-16 bg-violet-600/20 rounded-full blur-lg"
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.7, 1, 0.7],

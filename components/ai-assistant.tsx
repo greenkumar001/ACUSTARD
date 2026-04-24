@@ -163,8 +163,8 @@ export function AiAssistant() {
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
-            <Card className="overflow-hidden shadow-xl border-acustard-blue/20">
-              <CardHeader className="bg-acustard-blue text-white p-4 flex flex-row justify-between items-center">
+            <Card className="overflow-hidden shadow-xl border-blue-700/20">
+              <CardHeader className="bg-blue-700 text-white p-4 flex flex-row justify-between items-center">
                 <div className="flex items-center gap-2">
                   <div className="relative h-8 w-8 overflow-hidden rounded-full">
                     <Image
@@ -181,7 +181,7 @@ export function AiAssistant() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:bg-acustard-blue hover:text-white transition-colors duration-300"
+                  className="text-white hover:bg-blue-700 hover:text-white transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   <X className="h-4 w-4" />
@@ -189,7 +189,7 @@ export function AiAssistant() {
               </CardHeader>
 
               <CardContent className="p-0">
-                <div className="h-80 overflow-y-auto p-4 bg-muted/30">
+                <div className="h-80 overflow-y-auto p-4 backdrop-blur-sm bg-white/80">
                   {messages.map((message) => (
                     <div
                       key={message.id}
@@ -197,7 +197,7 @@ export function AiAssistant() {
                     >
                       <div
                         className={`max-w-[80%] rounded-lg px-4 py-2 ${
-                          message.sender === "user" ? "bg-acustard-blue text-white" : "bg-muted"
+                          message.sender === "user" ? "bg-blue-700 text-white" : "bg-muted"
                         }`}
                       >
                         <p className="text-sm">{message.content}</p>
@@ -250,7 +250,7 @@ export function AiAssistant() {
                   <Button
                     type="submit"
                     size="icon"
-                    className="bg-acustard-blue hover:bg-acustard-violet"
+                    className="bg-blue-700 hover:bg-violet-600"
                     disabled={!inputValue.trim()}
                   >
                     <Send className="h-4 w-4" />

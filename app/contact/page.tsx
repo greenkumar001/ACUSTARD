@@ -103,22 +103,22 @@ export default function ContactPage() {
               animate="visible"
             >
               <motion.div variants={itemVariants}>
-                <Card className="border-acustard-blue/20 hover:border-acustard-blue/50 transition-colors hover:shadow-lg hover:shadow-acustard-blue/10">
+                <Card className="border-blue-700/20 hover:border-blue-700/50 transition-colors hover:shadow-lg hover:shadow-blue-700/10">
                   <CardContent className="p-6">
                     <div className="flex flex-col items-center text-center gap-4">
                       <motion.div
-                        className="h-12 w-12 rounded-full bg-acustard-blue/10 flex items-center justify-center"
+                        className="h-12 w-12 rounded-full bg-blue-700/10 flex items-center justify-center"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
-                        <Phone className="h-6 w-6 text-acustard-blue" />
+                        <Phone className="h-6 w-6 text-blue-700" />
                       </motion.div>
                       <div>
                         <h3 className="text-lg font-medium mb-2">Phone</h3>
                         <p className="text-sm text-muted-foreground mb-1">
                           <Link
                             href="tel:+91 9145376420"
-                            className="hover:text-acustard-blue transition-colors duration-300"
+                            className="hover:text-blue-700 transition-colors duration-300"
                           >
                             +91 9145376420
                           </Link>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                         <p className="text-sm text-muted-foreground">
                           <Link
                             href="tel:+91 8275723209"
-                            className="hover:text-acustard-blue transition-colors duration-300"
+                            className="hover:text-blue-700 transition-colors duration-300"
                           >
                             +91 8275723209
                           </Link>
@@ -138,15 +138,15 @@ export default function ContactPage() {
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <Card className="border-acustard-violet/20 hover:border-acustard-violet/50 transition-colors hover:shadow-lg hover:shadow-acustard-violet/10">
+                <Card className="border-violet-600/20 hover:border-violet-600/50 transition-colors hover:shadow-lg hover:shadow-violet-600/10">
                   <CardContent className="p-6">
                     <div className="flex flex-col items-center text-center gap-4">
                       <motion.div
-                        className="h-12 w-12 rounded-full bg-acustard-violet/10 flex items-center justify-center"
+                        className="h-12 w-12 rounded-full bg-violet-600/10 flex items-center justify-center"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
-                        <Mail className="h-6 w-6 text-acustard-violet" />
+                        <Mail className="h-6 w-6 text-violet-600" />
                       </motion.div>
                       <div>
                         <h3 className="text-lg font-medium mb-2">Email</h3>
@@ -173,15 +173,15 @@ export default function ContactPage() {
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <Card className="border-acustard-blue/20 hover:border-acustard-blue/50 transition-colors hover:shadow-lg hover:shadow-acustard-blue/10">
+                <Card className="border-blue-700/20 hover:border-blue-700/50 transition-colors hover:shadow-lg hover:shadow-blue-700/10">
                   <CardContent className="p-6">
                     <div className="flex flex-col items-center text-center gap-4">
                       <motion.div
-                        className="h-12 w-12 rounded-full bg-acustard-blue/10 flex items-center justify-center"
+                        className="h-12 w-12 rounded-full bg-blue-700/10 flex items-center justify-center"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
-                        <Clock className="h-6 w-6 text-acustard-blue" />
+                        <Clock className="h-6 w-6 text-blue-700" />
                       </motion.div>
                       <div>
                         <h3 className="text-lg font-medium mb-2">Business Hours</h3>
@@ -231,7 +231,7 @@ export default function ContactPage() {
                     whileHover={{ x: 5 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <CheckCircle className="h-5 w-5 text-acustard-blue mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                     <p className="text-sm text-muted-foreground">
                       <span className="font-medium text-foreground">Quick Response:</span> Our team typically responds
                       within 24 hours.
@@ -242,7 +242,7 @@ export default function ContactPage() {
                     whileHover={{ x: 5 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <CheckCircle className="h-5 w-5 text-acustard-violet mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                     <p className="text-sm text-muted-foreground">
                       <span className="font-medium text-foreground">Expert Consultation:</span> Get personalized advice
                       from our specialists.
@@ -253,7 +253,7 @@ export default function ContactPage() {
                     whileHover={{ x: 5 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <CheckCircle className="h-5 w-5 text-acustard-blue mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                     <p className="text-sm text-muted-foreground">
                       <span className="font-medium text-foreground">Confidentiality:</span> Your information is secure
                       and will not be shared.
@@ -295,7 +295,7 @@ export default function ContactPage() {
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <div className="flex items-start gap-4">
-                    <MapPin className="h-6 w-6 text-acustard-blue mt-1 shrink-0" />
+                    <MapPin className="h-6 w-6 text-blue-700 mt-1 shrink-0" />
                     <div>
                       <h3 className="font-medium mb-2">Office Address</h3>
                       <p className="text-sm text-muted-foreground">
@@ -309,7 +309,7 @@ export default function ContactPage() {
 
                   <div className="mt-6 pt-6 border-t">
                     <div className="flex items-start gap-4">
-                      <MessageSquare className="h-6 w-6 text-acustard-violet mt-1 shrink-0" />
+                      <MessageSquare className="h-6 w-6 text-violet-600 mt-1 shrink-0" />
                       <div>
                         <h3 className="font-medium mb-2">WhatsApp Support</h3>
                         <p className="text-sm text-muted-foreground">
@@ -317,7 +317,7 @@ export default function ContactPage() {
                           <br />
                           <Link
                             href="https://wa.me/9145376420"
-                            className="text-acustard-violet hover:underline transition-colors duration-300"
+                            className="text-violet-600 hover:underline transition-colors duration-300"
                           >
                             +91 9145376420
                           </Link>
@@ -334,7 +334,7 @@ export default function ContactPage() {
         {/* FAQ Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 relative">
           {/* Background image */}
-          <div className="absolute inset-0 z-0 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
             <Image
               src={IMAGES.backgrounds.abstract || "/placeholder.svg"}
               alt="Abstract technology background"
@@ -449,7 +449,7 @@ export default function ContactPage() {
                   <Link href="/services">
                     <Button
                       size="lg"
-                      className="bg-acustard-blue hover:bg-acustard-violet transition-all duration-300 hover:shadow-lg hover:shadow-acustard-blue/20"
+                      className="bg-blue-700 hover:bg-violet-600 transition-all duration-300 hover:shadow-lg hover:shadow-blue-700/20"
                     >
                       Explore Our Services
                     </Button>
@@ -460,7 +460,7 @@ export default function ContactPage() {
                     <Button
                       variant="outline"
                       size="lg"
-                      className="hover:bg-acustard-violet/10 transition-all duration-300"
+                      className="hover:bg-violet-600/10 transition-all duration-300"
                     >
                       View Our Portfolio
                     </Button>

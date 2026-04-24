@@ -36,7 +36,7 @@ export default function Home() {
         <HeroSection />
 
         {/* Services Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10 relative overflow-hidden">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-500/10 to-violet-500/10 relative overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -59,14 +59,14 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
               <Card className="group relative overflow-hidden transition-all hover:shadow-lg">
                 <CardHeader className="p-6">
-                  <Code className="h-10 w-10 mb-2 text-acustard-blue" />
+                  <Code className="h-10 w-10 mb-2 text-blue-700" />
                   <CardTitle>Software Development</CardTitle>
                   <CardDescription>Custom software solutions tailored to your business needs.</CardDescription>
                 </CardHeader>
                 <CardFooter className="p-6 pt-0">
                   <Link
                     href="/services#software"
-                    className="inline-flex items-center text-sm font-medium text-acustard-blue"
+                    className="inline-flex items-center text-sm font-medium text-blue-700"
                   >
                     Learn more <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
@@ -74,14 +74,14 @@ export default function Home() {
               </Card>
               <Card className="group relative overflow-hidden transition-all hover:shadow-lg">
                 <CardHeader className="p-6">
-                  <Palette className="h-10 w-10 mb-2 text-acustard-violet" />
+                  <Palette className="h-10 w-10 mb-2 text-violet-600" />
                   <CardTitle>Design Services</CardTitle>
                   <CardDescription>Logo design, brochures, and visual identity creation.</CardDescription>
                 </CardHeader>
                 <CardFooter className="p-6 pt-0">
                   <Link
                     href="/services#design"
-                    className="inline-flex items-center text-sm font-medium text-acustard-violet"
+                    className="inline-flex items-center text-sm font-medium text-violet-600"
                   >
                     Learn more <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
@@ -89,7 +89,7 @@ export default function Home() {
               </Card>
               <Card className="group relative overflow-hidden transition-all hover:shadow-lg">
                 <CardHeader className="p-6">
-                  <Globe className="h-10 w-10 mb-2 text-acustard-blue" />
+                  <Globe className="h-10 w-10 mb-2 text-blue-700" />
                   <CardTitle>Digital Marketing</CardTitle>
                   <CardDescription>
                     Comprehensive digital marketing strategies to grow your online presence.
@@ -98,7 +98,7 @@ export default function Home() {
                 <CardFooter className="p-6 pt-0">
                   <Link
                     href="/services#marketing"
-                    className="inline-flex items-center text-sm font-medium text-acustard-blue"
+                    className="inline-flex items-center text-sm font-medium text-blue-700"
                   >
                     Learn more <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
@@ -109,28 +109,36 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-acustard-black text-white">
+        <section className="w-full py-16 md:py-28 lg:py-36 bg-black text-white">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Impact in Numbers</h2>
-                <p className="max-w-[900px] text-white/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <div className="flex flex-col items-center justify-center gap-6 text-center mb-16">
+              <div className="space-y-3">
+                <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">Our Impact in Numbers</h2>
+                <p className="mx-auto max-w-2xl text-base text-white/70 md:text-lg lg:text-base">
                   We've helped businesses across various industries achieve their digital goals.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
               <StatsCounter
                 end={150}
                 label="Projects Completed"
-                icon={<Briefcase className="h-5 w-5 text-acustard-blue" />}
+                icon={<Briefcase className="h-6 w-6 text-blue-700" />}
               />
-              <StatsCounter end={80} label="Happy Clients" icon={<Users className="h-5 w-5 text-acustard-violet" />} />
-              <StatsCounter end={15} label="Team Members" icon={<Users className="h-5 w-5 text-acustard-blue" />} />
+              <StatsCounter 
+                end={80} 
+                label="Happy Clients" 
+                icon={<Users className="h-6 w-6 text-violet-600" />} 
+              />
+              <StatsCounter 
+                end={15} 
+                label="Team Members" 
+                icon={<Users className="h-6 w-6 text-blue-700" />} 
+              />
               <StatsCounter
                 end={5}
                 label="Years Experience"
-                icon={<Award className="h-5 w-5 text-acustard-violet" />}
+                icon={<Award className="h-6 w-6 text-violet-600" />}
               />
             </div>
           </div>
@@ -161,37 +169,37 @@ export default function Home() {
                 </p>
                 <ul className="space-y-2 mt-4">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-acustard-blue mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                     <span>Expert team with diverse technical skills</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-acustard-violet mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-violet-600 mt-0.5 shrink-0" />
                     <span>Proven track record of successful projects</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-acustard-blue mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-blue-700 mt-0.5 shrink-0" />
                     <span>Client-focused approach to every project</span>
                   </li>
                 </ul>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/about">
-                    <Button className="bg-acustard-blue hover:bg-acustard-violet">Learn More About Us</Button>
+                    <Button className="bg-blue-700 hover:bg-violet-600">Learn More About Us</Button>
                   </Link>
                   <Link href="/contact">
-                    <Button variant="outline" className="hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+                    <Button variant="outline" className="hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
                       Contact Us
                     </Button>
                   </Link>
                 </div>
               </div>
               <div className="relative">
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-acustard-blue/20 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-acustard-violet/20 rounded-full blur-xl"></div>
+                <div className="absolute -top-6 -left-6 w-24 h-24 bg-blue-500 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-violet-500/20 rounded-full blur-xl"></div>
                 <div className="relative rounded-lg overflow-hidden border shadow-lg">
                   {/* Update the office image in the About Section */}
                   <Image
                     src={IMAGES.office || "/placeholder.svg"}
-                    alt="acustard TECHNOLOGY office"
+                    alt="ACUSTARD TECHNOLOGY office"
                     width={600}
                     height={400}
                     className="rounded-lg object-cover"
@@ -203,7 +211,7 @@ export default function Home() {
         </section>
 
         {/* Website Showcase Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-500/10 to-violet-500/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
@@ -218,7 +226,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center mt-8">
               <Link href="/portfolio">
-                <Button className="bg-acustard-blue hover:bg-acustard-violet">
+                <Button className="bg-blue-700 hover:bg-violet-600">
                   View All Projects <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -258,25 +266,25 @@ export default function Home() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Cpu className="h-8 w-8 text-acustard-blue" />
+                      <Cpu className="h-8 w-8 text-blue-700" />
                     </div>
                     <span className="text-sm font-medium">React</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Layers className="h-8 w-8 text-acustard-violet" />
+                      <Layers className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Next.js</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Code className="h-8 w-8 text-acustard-blue" />
+                      <Code className="h-8 w-8 text-blue-700" />
                     </div>
                     <span className="text-sm font-medium">Node.js</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <LayoutGrid className="h-8 w-8 text-acustard-violet" />
+                      <LayoutGrid className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Angular</span>
                   </div>
@@ -286,25 +294,25 @@ export default function Home() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Cpu className="h-8 w-8 text-acustard-blue" />
+                      <Cpu className="h-8 w-8 text-blue-700" />
                     </div>
                     <span className="text-sm font-medium">React Native</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Layers className="h-8 w-8 text-acustard-violet" />
+                      <Layers className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Flutter</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Code className="h-8 w-8 text-acustard-blue" />
+                      <Code className="h-8 w-8 text-blue-700" />
                     </div>
                     <span className="text-sm font-medium">Swift</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <LayoutGrid className="h-8 w-8 text-acustard-violet" />
+                      <LayoutGrid className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Kotlin</span>
                   </div>
@@ -314,25 +322,25 @@ export default function Home() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-acustard-violet" />
+                      <Palette className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Adobe XD</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-acustard-blue" />
+                      <Palette className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Figma</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-acustard-violet" />
+                      <Palette className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Photoshop</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-acustard-blue" />
+                      <Palette className="h-8 w-8 text-violet-600" />
                     </div>
                     <span className="text-sm font-medium">Illustrator</span>
                   </div>
@@ -343,7 +351,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -357,10 +365,10 @@ export default function Home() {
               <Card className="bg-muted/50">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <MessageSquare className="h-10 w-10 text-acustard-blue" />
+                    <MessageSquare className="h-10 w-10 text-blue-700" />
                     <div>
                       <p className="text-lg font-medium">
-                        "acustard TECHNOLOGY transformed our business with their innovative software solutions. Their
+                        "ACUSTARD TECHNOLOGY transformed our business with their innovative software solutions. Their
                         team was professional, responsive, and delivered beyond our expectations."
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground">— Sarah Johnson, CEO of TechStart</p>
@@ -371,10 +379,10 @@ export default function Home() {
               <Card className="bg-muted/50">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <MessageSquare className="h-10 w-10 text-acustard-violet" />
+                    <MessageSquare className="h-10 w-10 text-violet-600" />
                     <div>
                       <p className="text-lg font-medium">
-                        "The digital marketing campaign designed by acustard TECHNOLOGY increased our online visibility
+                        "The digital marketing campaign designed by ACUSTARD TECHNOLOGY increased our online visibility
                         by 200%. Their strategic approach and attention to detail made all the difference."
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground">
@@ -392,8 +400,8 @@ export default function Home() {
         <section className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-acustard-blue/5 rounded-bl-full"></div>
-            <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-acustard-violet/5 rounded-tr-full"></div>
+            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500/5 rounded-bl-full"></div>
+            <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-violet-500/5 rounded-tr-full"></div>
           </div>
 
           <div className="container px-4 md:px-6 relative z-10">
@@ -406,15 +414,15 @@ export default function Home() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <Globe className="h-5 w-5 text-acustard-blue" />
+                    <Globe className="h-5 w-5 text-blue-700" />
                     <span>www.acustardtech.com</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <MessageSquare className="h-5 w-5 text-acustard-violet" />
+                    <MessageSquare className="h-5 w-5 text-violet-600" />
                     <span>info@acustardtech.com</span>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-acustard-blue/10 rounded-lg border border-acustard-blue/20">
+                <div className="mt-6 p-4 bg-blue-500/10 rounded-lg border border-blue-500/20">
                   <h3 className="font-medium mb-2 flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

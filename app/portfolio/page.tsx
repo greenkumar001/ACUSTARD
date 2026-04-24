@@ -17,7 +17,7 @@ export default function PortfolioPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10 relative">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10 relative">
           <div className="absolute inset-0 z-0">
             <Image
               src={IMAGES.backgrounds.abstract || "/placeholder.svg"}
@@ -53,7 +53,7 @@ export default function PortfolioPage() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <Tabs defaultValue="all" className="w-full">
-              <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-acustard-blue/10">
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-blue-700/10">
                 <TabsTrigger value="all">All</TabsTrigger>
                 <TabsTrigger value="software">Software</TabsTrigger>
                 <TabsTrigger value="design">Design</TabsTrigger>
@@ -127,7 +127,7 @@ export default function PortfolioPage() {
                     <CardFooter>
                       <Link
                         href="/portfolio/ecommerce"
-                        className="inline-flex items-center text-sm font-medium text-acustard-blue"
+                        className="inline-flex items-center text-sm font-medium text-blue-700"
                       >
                         View Case Study <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
@@ -154,7 +154,7 @@ export default function PortfolioPage() {
                     <CardFooter>
                       <Link
                         href="/portfolio/banking-app"
-                        className="inline-flex items-center text-sm font-medium text-acustard-violet"
+                        className="inline-flex items-center text-sm font-medium text-violet-600"
                       >
                         View Case Study <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
@@ -185,7 +185,7 @@ export default function PortfolioPage() {
                     <CardFooter>
                       <Link
                         href="/portfolio/brand-identity"
-                        className="inline-flex items-center text-sm font-medium text-acustard-blue"
+                        className="inline-flex items-center text-sm font-medium text-blue-700"
                       >
                         View Case Study <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
@@ -212,7 +212,7 @@ export default function PortfolioPage() {
                     <CardFooter>
                       <Link
                         href="/portfolio/product-brochure"
-                        className="inline-flex items-center text-sm font-medium text-acustard-violet"
+                        className="inline-flex items-center text-sm font-medium text-violet-600"
                       >
                         View Case Study <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
@@ -243,7 +243,7 @@ export default function PortfolioPage() {
                     <CardFooter>
                       <Link
                         href="/portfolio/seo-campaign"
-                        className="inline-flex items-center text-sm font-medium text-acustard-blue"
+                        className="inline-flex items-center text-sm font-medium text-blue-700"
                       >
                         View Case Study <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
@@ -270,7 +270,7 @@ export default function PortfolioPage() {
                     <CardFooter>
                       <Link
                         href="/portfolio/social-media"
-                        className="inline-flex items-center text-sm font-medium text-acustard-violet"
+                        className="inline-flex items-center text-sm font-medium text-violet-600"
                       >
                         View Case Study <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
@@ -283,7 +283,7 @@ export default function PortfolioPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -296,12 +296,12 @@ export default function PortfolioPage() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-acustard-blue hover:bg-acustard-violet">
+                  <Button size="lg" className="bg-blue-700 hover:bg-violet-600">
                     Contact Us
                   </Button>
                 </Link>
                 <Link href="/services">
-                  <Button variant="outline" size="lg">
+                  <Button variant="outline" size="lg" className="hover:bg-blue-700 hover:text-white">
                     Explore Our Services
                   </Button>
                 </Link>

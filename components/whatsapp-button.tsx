@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function WhatsappButton() {
   const whatsappNumber = "+919145376420" // Replace with your actual WhatsApp number
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20acustard%20TECHNOLOGY,%20I'm%20interested%20in%20your%20services.`
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20ACUSTARD%20TECHNOLOGY,%20I'm%20interested%20in%20your%20services.`
 
   return (
     <motion.div

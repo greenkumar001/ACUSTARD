@@ -37,7 +37,7 @@ export default function GalleryPage() {
   if (!uniqueImages.has(IMAGES.office)) {
     uniqueImages.set(IMAGES.office, {
       src: IMAGES.office,
-      alt: "acustard TECHNOLOGY Office",
+      alt: "ACUSTARD TECHNOLOGY Office",
       category: "Company",
     })
   }
@@ -45,7 +45,7 @@ export default function GalleryPage() {
   if (!uniqueImages.has(IMAGES.team)) {
     uniqueImages.set(IMAGES.team, {
       src: IMAGES.team,
-      alt: "acustard TECHNOLOGY Team",
+      alt: "ACUSTARD TECHNOLOGY Team",
       category: "Company",
     })
   }
@@ -94,7 +94,7 @@ export default function GalleryPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10 relative">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10 relative">
           <div className="absolute inset-0 z-0">
             <Image
               src={IMAGES.backgrounds.digital || "/placeholder.svg"}
@@ -111,7 +111,7 @@ export default function GalleryPage() {
                   <div className="relative h-12 w-12">
                     <Image
                       src={IMAGES.logo || "/placeholder.svg"}
-                      alt="acustard TECHNOLOGY Logo"
+                      alt="ACUSTARD TECHNOLOGY Logo"
                       fill
                       className="object-contain"
                     />
@@ -159,7 +159,7 @@ export default function GalleryPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-acustard-blue/10 to-acustard-violet/10">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -172,12 +172,12 @@ export default function GalleryPage() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-acustard-blue hover:bg-acustard-violet">
+                  <Button size="lg" className="bg-blue-700 hover:bg-violet-600">
                     Contact Us
                   </Button>
                 </Link>
                 <Link href="/portfolio">
-                  <Button variant="outline" size="lg" className="hover:bg-acustard-blue hover:text-white hover:border-acustard-blue transition-colors duration-300">
+                  <Button variant="outline" size="lg" className="hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-colors duration-300">
                     View Our Portfolio
                   </Button>
                 </Link>
