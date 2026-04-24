@@ -91,7 +91,7 @@ export function Navbar() {
                   <Button
                     key={item.name}
                     variant="ghost"
-                    className="justify-start text-lg font-medium text-black hover:bg-blue-700 hover:text-white transition-colors duration-300"
+                    className="justify-start text-lg font-medium text-white hover:bg-blue-700 hover:text-white transition-colors duration-300"
                     onClick={() => handleNavigation(item.href)}
                   >
                     {item.name}
