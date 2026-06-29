@@ -77,7 +77,7 @@ export const IMAGES = {
       title: "Devrath Industries pvt ltd",
       description: "A modern corporate website designed for a leading manufacturer of fire-rated and security doors",
       image: "../../public/devrath.png",
-      url: "https://www.devrathindustries.com/",
+      url: "https://www.devrathindustries.com?q=80&w=2073&auto=format&fit=crop",
       technologies: ["React", "Node.js", "MongoDB"],
     },
     {
@@ -85,7 +85,7 @@ export const IMAGES = {
       title: "SunEnergySystems",
       description: "The website highlights the company's services, promotes renewable energy solutions, and provides an intuitive user experience across all devices.",
       image: "../../public/sunenergy.png",
-      url: "https://sunenergysystem.vercel.app/",
+      url: "https://sunenergysystem.vercel.app?q=80&w=2073&auto=format&fit=crop",
       technologies: ["Next.js", "Express", "PostgreSQL"],
     },
     {
