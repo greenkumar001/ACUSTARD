@@ -74,19 +74,19 @@ export const IMAGES = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce solution with advanced filtering and payment integration.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-      url: "https://example.com/project1",
+      title: "Devrath Industries pvt ltd",
+      description: "A modern corporate website designed for a leading manufacturer of fire-rated and security doors",
+      image: "../../public/devrath.png",
+      url: "https://www.devrathindustries.com/",
       technologies: ["React", "Node.js", "MongoDB"],
     },
     {
       id: 2,
-      title: "Healthcare Dashboard",
-      description: "Interactive dashboard for healthcare professionals to monitor patient data.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      url: "https://example.com/project2",
-      technologies: ["Angular", "Express", "PostgreSQL"],
+      title: "SunEnergySystems",
+      description: "The website highlights the company's services, promotes renewable energy solutions, and provides an intuitive user experience across all devices.",
+      image: "../../public/sunenergy.png",
+      url: "https://sunenergysystem.vercel.app/",
+      technologies: ["Next.js", "Express", "PostgreSQL"],
     },
     {
       id: 3,
