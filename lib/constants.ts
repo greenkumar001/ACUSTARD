@@ -76,7 +76,7 @@ export const IMAGES = {
       id: 1,
       title: "Devrath Industries pvt ltd",
       description: "A modern corporate website designed for a leading manufacturer of fire-rated and security doors",
-      image: "/devrath.png",
+      image: "/devrath.jpeg",
       url: "https://www.devrathindustries.com/",
       technologies: ["React", "Node.js", "MongoDB"],
     },
@@ -84,7 +84,7 @@ export const IMAGES = {
       id: 2,
       title: "SunEnergySystems",
       description: "The website highlights the company's services, promotes renewable energy solutions, and provides an intuitive user experience across all devices.",
-      image: "/sunenergy.png",
+      image: "/sunenergy.jpeg",
       url: "https://sunenergysystem.vercel.app/",
       technologies: ["Next.js", "Express", "PostgreSQL"],
     },
@@ -103,7 +103,7 @@ export const IMAGES = {
     {
       name: "Greenkumar Bisen",
       role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
+      image: "?q=80&w=1974&auto=format&fit=crop",
       bio: "Visionary leader with over 4+ years of experience in the technology industry.",
     },
 /*{
