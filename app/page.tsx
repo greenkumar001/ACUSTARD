@@ -371,7 +371,7 @@ export default function Home() {
                         "ACUSTARD TECHNOLOGY transformed our business with their innovative software solutions. Their
                         team was professional, responsive, and delivered beyond our expectations."
                       </p>
-                      <p className="mt-2 text-sm text-muted-foreground">— Sarah Johnson, CEO of TechStart</p>
+                      <p className="mt-2 text-sm text-muted-foreground">— T Harinkhede, CEO of Devrath technologies</p>
                     </div>
                   </div>
                 </CardContent>
@@ -386,7 +386,7 @@ export default function Home() {
                         by 200%. Their strategic approach and attention to detail made all the difference."
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground">
-                        — Michael Chen, Marketing Director at GlobalTech
+                        — Ritesh Patle, CEO of SunEnergySystems.
                       </p>
                     </div>
                   </div>
