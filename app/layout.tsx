@@ -13,13 +13,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "ACUSTARD TECHNOLOGIES",
-  description: "Innovative Software Solutions & Digital Services",  export const metadata: Metadata = {
-    title: "ACUSTARD TECHNOLOGIES",
-    description: "Innovative Software Solutions & Digital Services",
+  description: "Innovative Software Solutions & Digital Services",  
     icons: {
       icon: "/favicon.ico",
     },
-  }
 }
 
 export default function RootLayout({
