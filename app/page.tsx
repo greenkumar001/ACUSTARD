@@ -419,7 +419,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2">
                     <MessageSquare className="h-5 w-5 text-violet-600" />
-                    <span>info@acustardtech.com</span>
+                    <span>acustardtechnologies@gmail.com</span>
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-blue-500/10 rounded-lg border border-blue-500/20">
