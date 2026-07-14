@@ -121,19 +121,19 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
               <StatsCounter
-                end={4}
+                end={10}
                 label="Projects Completed"
                 icon={<Briefcase className="h-6 w-6 text-blue-700" />}
               />
-              <StatsCounter 
-                end={4} 
-                label="Happy Clients" 
-                icon={<Users className="h-6 w-6 text-violet-600" />} 
+              <StatsCounter
+                end={15}
+                label="Happy Clients"
+                icon={<Users className="h-6 w-6 text-violet-600" />}
               />
-              <StatsCounter 
-                end={8} 
-                label="Team Members" 
-                icon={<Users className="h-6 w-6 text-blue-700" />} 
+              <StatsCounter
+                end={8}
+                label="Team Members"
+                icon={<Users className="h-6 w-6 text-blue-700" />}
               />
               <StatsCounter
                 end={5}

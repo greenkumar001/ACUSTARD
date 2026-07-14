@@ -89,13 +89,30 @@ export const IMAGES = {
       technologies: ["Next.js", "Express", "PostgreSQL"],
     },
     {
-      id: 3,
-      title: "Real Estate Portal",
-      description: "Property listing and management system with virtual tours.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop",
-      url: "https://example.com/project3",
-      technologies: ["Next.js", "Tailwind CSS", "Supabase"],
-    },
+  id: 3,
+  title: "NexGenBR Technologies",
+  description:
+    "NexGenBR Technologies is a next-generation EdTech and Software Development platform designed to bridge the gap between education and industry. The platform features a powerful Learning Management System (LMS), role-based Admin Dashboard, Student & Trainer Portals, Placement Management, Live Classes, Course Management, Assessments, Coding Practice, Progress Tracking, Certificate Generation, Internship Management, Attendance, Announcements, AI-powered learning assistance, and analytics. Built with a scalable microservice-ready architecture, the system ensures high performance, security, responsive design, and seamless user experience for students, trainers, recruiters, and administrators.",
+  image:
+    "/Nexgenbr.png",
+  url: "https://nexgenbrtechnologies.com/",
+  technologies: [
+    "Next.js",
+    "Pnpm",
+    "TypeScript",
+    "Tailwind CSS",
+    "MongoDB",
+    "JWT Authentication",
+    "REST APIs",
+    "Role-Based Access Control",
+    "Admin Dashboard",
+    "Learning Management System",
+    "Placement Management",
+    "Analytics Dashboard",
+    "Cloud Deployment",
+    "Responsive UI"
+  ],
+}
   ],
 
   // Team members
