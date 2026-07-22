@@ -3,114 +3,187 @@
 import type React from "react"
 
 import { useState } from "react"
-import { useToast } from "@/hooks/use-toast"
+
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { sendEmail } from "@/actions/send-email"
+
 
 export function ContactForm() {
-  const { toast } = useToast()
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
+    fullName: '',
+    phone: '',
+    email: '',
+    message: '',
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const [submitted, setSubmitted] = useState(false)
+  const [errors, setErrors] = useState<{ [key: string]: string }>({})
+
+  const validateForm = () => {
+    const newErrors: { [key: string]: string } = {}
+
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = 'Full name is required'
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Phone number is required'
+    } else if (!/^[+\d\s-]{10,}$/.test(formData.phone)) {
+      newErrors.phone = 'Please enter a valid phone number'
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email'
+    }
+
+    return newErrors
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+    if (errors[name]) {
+      setErrors((prev) => {
+        const newErrors = { ...prev }
+        delete newErrors[name]
+        return newErrors
+      })
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitting(true)
+    const newErrors = validateForm()
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors)
+      return
+    }
 
     try {
-      // Create FormData object
-      const formDataObj = new FormData()
-      formDataObj.append("name", formData.name)
-      formDataObj.append("email", formData.email)
-      formDataObj.append("phone", formData.phone)
-      formDataObj.append("message", formData.message)
-
-      // Call the server action
-      const result = await sendEmail(formDataObj)
-
-      // Show toast notification based on result
-      toast({
-        title: result.success ? "Message sent!" : "Error",
-        description: result.message,
-        variant: result.success ? "default" : "destructive",
+      const response = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
 
-      // Reset form if successful
-      if (result.success) {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        })
+      if (!response.ok) {
+        throw new Error('Failed to submit enquiry')
       }
+
+      setSubmitted(true)
+      setTimeout(() => {
+        setFormData({ fullName: '', phone: '', email: '', message: '' })
+        setSubmitted(false)
+        setErrors({})
+      }, 4000)
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "An unexpected error occurred. Please try again later.",
-        variant: "destructive",
-      })
-    } finally {
-      setIsSubmitting(false)
+      console.error('Enquiry submission failed:', error)
+      setErrors({ submit: 'Unable to send enquiry right now. Please try again later.' })
     }
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
-      <div className="space-y-2">
-        <Label htmlFor="name">Name</Label>
-        <Input id="name" name="name" placeholder="Your name" value={formData.name} onChange={handleChange} required />
+    <div className="animate-in fade-in slide-in-from-right-8 duration-1000">
+      <div className="bg-card border border-border rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
+        {submitted ? (
+          <div className="py-12 text-center animate-in fade-in duration-500">
+            <div className="w-16 h-16 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-foreground mb-2">Thank You!</h3>
+            <p className="text-muted-foreground">
+              We&apos;ve received your enquiry. Our counselor will contact you shortly.
+            </p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Full Name */}
+            <div>
+              <label htmlFor="fullName" className="block text-sm font-medium text-foreground mb-2">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                className={`w-full px-4 py-2 bg-background border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 transition-all ${errors.fullName ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-border focus:border-primary focus:ring-primary/20'
+                  }`}
+                placeholder="Raj Kumar"
+              />
+              {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
+            </div>
+
+            {/* Mobile */}
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className={`w-full px-4 py-2 bg-background border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 transition-all ${errors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-border focus:border-primary focus:ring-primary/20'
+                  }`}
+                placeholder="+91 9876543210"
+              />
+              {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+            </div>
+
+            {/* Email */}
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                Email *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={`w-full px-4 py-2 bg-background border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 transition-all ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-border focus:border-primary focus:ring-primary/20'
+                  }`}
+                placeholder="raj@example.com"
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            </div>
+            {/* Message */}
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none"
+                placeholder="Tell us about yourself or ask any questions..."
+              />
+            </div>
+
+            {/* Submit Button */}
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-black font-semibold py-2 transition-all hover:shadow-lg">
+              Submit Enquiry
+            </Button>
+
+            <p className="text-xs text-muted-foreground text-center">
+              We respect your privacy. Your information is secure with us.
+            </p>
+          </form>
+        )}
       </div>
-      <div className="space-y-2">
-        <Label htmlFor="email">Email</Label>
-        <Input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Your email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="phone">Phone</Label>
-        <Input
-          id="phone"
-          name="phone"
-          type="tel"
-          placeholder="Your phone number"
-          value={formData.phone}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="message">Message</Label>
-        <Textarea
-          id="message"
-          name="message"
-          placeholder="How can we help you?"
-          value={formData.message}
-          onChange={handleChange}
-          className="min-h-120px"
-          required
-        />
-      </div>
-      <Button type="submit" className="w-full bg-blue-700 hover:bg-violet-600" disabled={isSubmitting}>
-        {isSubmitting ? "Sending..." : "Send Message"}
-      </Button>
-    </form>
+    </div>
   )
+
 }
