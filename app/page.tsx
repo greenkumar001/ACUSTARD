@@ -415,7 +415,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <Globe className="h-5 w-5 text-blue-700" />
-                    <span>www.acustardtech.com</span>
+                    <span>www.acustardtechnologies.com</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MessageSquare className="h-5 w-5 text-violet-600" />

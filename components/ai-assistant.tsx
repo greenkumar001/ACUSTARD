@@ -9,72 +9,6 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import Image from "next/image"
 import { IMAGES } from "@/lib/constants"
 
-// Predefined responses for the AI assistant
-const PREDEFINED_RESPONSES: Record<string, string> = {
-  greeting: "Hello! Welcome to acustard Technologies. How can I assist you today?",
-  services:
-    "We offer a range of services including software development, design services, digital marketing, and IT consulting. Would you like to know more about any specific service?",
-  contact:
-    "You can reach us via email at acustardtechnologies@gmail.com, call us at +91 9145376420, or fill out the contact form on our website.",
-  about:
-    "acustard Technologies is a forward-thinking IT company founded by Greenkumar Bisen. We specialize in innovative software solutions and digital services for businesses of all sizes.",
-  software:
-    "Our software development services include web application development, mobile app development, enterprise software solutions, and API development & integration.",
-  design: "Our design services include logo design, brochure design, UI/UX design, and brand identity development.",
-  marketing:
-    "Our digital marketing services include SEO, social media marketing, content marketing, and email marketing campaigns.",
-  consulting:
-    "Our IT consulting services include IT strategy development, technology assessment, digital transformation, and IT infrastructure planning.",
-  location: "We are located in Nagpur, Maharashtra, India.",
-  hours: "Our business hours are Monday to Friday from 9:00 AM to 6:00 PM, and Saturday from 10:00 AM to 2:00 PM.",
-  default:
-    "I'm sorry, I don't have specific information about that. Would you like to speak with one of our team members? You can contact us through our contact form or email us at acustardtechnologies@gmail.com.",
-}
-
-// Function to find the best matching response
-function findBestResponse(message: string): string {
-  message = message.toLowerCase()
-
-  if (message.includes("hello") || message.includes("hi") || message.includes("hey")) {
-    return PREDEFINED_RESPONSES.greeting
-  } else if (message.includes("service")) {
-    return PREDEFINED_RESPONSES.services
-  } else if (
-    message.includes("contact") ||
-    message.includes("reach") ||
-    message.includes("email") ||
-    message.includes("phone")
-  ) {
-    return PREDEFINED_RESPONSES.contact
-  } else if (message.includes("about") || message.includes("company") || message.includes("who")) {
-    return PREDEFINED_RESPONSES.about
-  } else if (
-    message.includes("software") ||
-    message.includes("development") ||
-    message.includes("app") ||
-    message.includes("web")
-  ) {
-    return PREDEFINED_RESPONSES.software
-  } else if (
-    message.includes("design") ||
-    message.includes("logo") ||
-    message.includes("brochure") ||
-    message.includes("ui") ||
-    message.includes("ux")
-  ) {
-    return PREDEFINED_RESPONSES.design
-  } else if (message.includes("marketing") || message.includes("seo") || message.includes("social media")) {
-    return PREDEFINED_RESPONSES.marketing
-  } else if (message.includes("consulting") || message.includes("strategy") || message.includes("assessment")) {
-    return PREDEFINED_RESPONSES.consulting
-  } else if (message.includes("location") || message.includes("address") || message.includes("where")) {
-    return PREDEFINED_RESPONSES.location
-  } else if (message.includes("hours") || message.includes("time") || message.includes("when")) {
-    return PREDEFINED_RESPONSES.hours
-  } else {
-    return PREDEFINED_RESPONSES.default
-  }
-}
 
 interface Message {
   id: string
@@ -109,10 +43,9 @@ export function AiAssistant() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages])
 
-  const handleSendMessage = () => {
-    if (!inputValue.trim()) return
+  const handleSendMessage = async () => {
+    if (!inputValue.trim() || isTyping) return
 
-    // Add user message
     const userMessage: Message = {
       id: `user-${Date.now()}`,
       content: inputValue,
@@ -124,20 +57,44 @@ export function AiAssistant() {
     setInputValue("")
     setIsTyping(true)
 
-    // Simulate AI thinking and responding
-    setTimeout(() => {
-      const response = findBestResponse(userMessage.content)
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userMessage.content,
+        }),
+      })
+
+      const data = await response.json()
 
       const assistantMessage: Message = {
         id: `assistant-${Date.now()}`,
-        content: response,
+        content:
+          data.answer ||
+          "Sorry, I don't have this information in the official ACUSTARD TECHNOLOGIES website data.",
         sender: "assistant",
         timestamp: new Date(),
       }
 
       setMessages((prev) => [...prev, assistantMessage])
+    } catch (error) {
+      console.error("Chat error:", error)
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: `assistant-${Date.now()}`,
+          content: "Something went wrong. Please try again.",
+          sender: "assistant",
+          timestamp: new Date(),
+        },
+      ])
+    } finally {
       setIsTyping(false)
-    }, 1000)
+    }
   }
 
   return (
@@ -196,9 +153,8 @@ export function AiAssistant() {
                       className={`mb-4 flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
                     >
                       <div
-                        className={`max-w-[80%] rounded-lg px-4 py-2 ${
-                          message.sender === "user" ? "bg-blue-700 text-white" : "bg-muted"
-                        }`}
+                        className={`max-w-[80%] rounded-lg px-4 py-2 ${message.sender === "user" ? "bg-blue-700 text-white" : "bg-muted"
+                          }`}
                       >
                         <p className="text-sm">{message.content}</p>
                         <p className="text-xs mt-1 opacity-70">

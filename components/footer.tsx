@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import {  Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
@@ -60,10 +60,10 @@ export function Footer() {
                 </p>
                 <p className="text-sm text-muted-foreground">
                   <a
-                    href="mailto:support@acustardtech.com"
+                    href="mailto:info@acustardtechnologies.com"
                     className="hover:text-blue-700 transition-colors duration-300"
                   >
-                    support@acustardtech.com
+                    info@acustardtechnologies.com
                   </a>
                 </p>
               </div>
