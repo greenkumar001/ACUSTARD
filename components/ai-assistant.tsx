@@ -100,15 +100,22 @@ export function AiAssistant() {
   return (
     <>
       {/* Chat button */}
-      <motion.button
-        className="ai-assistant-button"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={() => setIsOpen(true)}
-        aria-label="Open AI Assistant"
-      >
-        <Bot className="h-6 w-6" />
-      </motion.button>
+      <div className="assistant-wrapper">
+        <div className="assistant-hi">Hi 👋</div>
+
+        <motion.button
+          className="ai-assistant-button"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => setIsOpen(true)}
+          aria-label="Open AI Assistant"
+        >
+          <img
+            src="/assistant.png"
+            alt="Acustard AI Assistant"
+          />
+        </motion.button>
+      </div>
 
       {/* Chat window */}
       <AnimatePresence>
@@ -206,10 +213,13 @@ export function AiAssistant() {
                   <Button
                     type="submit"
                     size="icon"
-                    className="bg-blue-700 hover:bg-violet-600"
+                    className="ai-assistant-button"
                     disabled={!inputValue.trim()}
-                  >
-                    <Send className="h-4 w-4" />
+                  > <img
+                      src="/assistant.png"
+                      alt="Acustard AI Assistant"
+                    />
+                    {/* <Send className="h-4 w-4" /> */}
                   </Button>
                 </form>
               </CardFooter>

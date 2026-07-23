@@ -2,125 +2,282 @@
 export const IMAGES = {
   // Company images
   logo: "/ACUSTARD.jpeg",
-  office: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop",
-  team: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+  office: "/office.avif",
+  team: "/Team.avif",
 
   // Hero section
   hero: "https://images.unsplash.com/photo-1581090700227-8e3b68af33f0?q=80&w=2070&auto=format&fit=crop",
 
   // Background images for different sections
   backgrounds: {
-    tech: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop", // Code on screen
-    circuit: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop", // Tech/code background
-    data: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop", // Software development
-    design: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop", // App development
-    gradient: "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?q=80&w=2070&auto=format&fit=crop", // Colorful code
-    abstract: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop", // Coding
-    network: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop", // Programming
-    digital: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop", // Code closeup
-    ai: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop", // AI visualization
-    cyber: "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop", // Cybersecurity
-    software: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=2070&auto=format&fit=crop", // Software development
-    development: "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2081&auto=format&fit=crop", // Development
-  },
-
-  // Portfolio images
-  portfolio: [
-    {
-      id: "ecommerce",
-      title: "E-Commerce Platform",
-      category: "Software Development",
-      src: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
-      alt: "E-Commerce Platform",
-    },
-    {
-      id: "brand-identity",
-      title: "Brand Identity",
-      category: "Design Services",
-      src: "https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=2070&auto=format&fit=crop",
-      alt: "Brand Identity Design",
-    },
-    {
-      id: "seo-campaign",
-      title: "SEO Campaign",
-      category: "Digital Marketing",
-      src: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2070&auto=format&fit=crop",
-      alt: "SEO Campaign Analytics",
-    },
-    {
-      id: "banking-app",
-      title: "Mobile Banking App",
-      category: "Software Development",
-      src: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070&auto=format&fit=crop",
-      alt: "Mobile Banking App",
-    },
-    {
-      id: "product-brochure",
-      title: "Product Brochure",
-      category: "Design Services",
-      src: "https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?q=80&w=2070&auto=format&fit=crop",
-      alt: "Product Brochure Design",
-    },
-    {
-      id: "social-media",
-      title: "Social Media Campaign",
-      category: "Digital Marketing",
-      src: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2070&auto=format&fit=crop",
-      alt: "Social Media Campaign",
-    },
-  ],
+     tech: "/tech.avif",
+  circuit: "/circuit.avif",
+  data: "/data.avif",
+  design: "/design.avif",
+  gradient: "/gradient.avif",
+  abstract: "/abstract.avif",
+  network: "/network.avif",
+  digital: "/digital.avif",
+  ai: "/ai.avif",
+  cyber: "/cyber.avif",
+  software: "/software.avif",
+  development: "/development.avif",
+  }
+,
+  // Portfolio
 
   // Project showcase
   projects: [
-    {
-      id: 1,
-      title: "Devrath Industries pvt ltd",
-      description: "A modern corporate website designed for a leading manufacturer of fire-rated and security doors",
-      image: "/Devrath.jpeg",
-      url: "https://www.devrathindustries.com/",
-      technologies: ["React", "Node.js", "MongoDB"],
-    },
-    {
-      id: 2,
-      title: "SunEnergySystems",
-      description: "The website highlights the company's services, promotes renewable energy solutions, and provides an intuitive user experience across all devices.",
-      image: "/SunEnergy.jpeg",
-      url: "https://sunenergysystem.vercel.app/",
-      technologies: ["Next.js", "Express", "PostgreSQL"],
-    },
-    {
-  id: 3,
-  title: "NexGenBR Technologies",
-  description:
-    "NexGenBR Technologies is a next-generation EdTech and Software Development platform designed to bridge the gap between education and industry. The platform features a powerful Learning Management System (LMS), role-based Admin Dashboard, Student & Trainer Portals, Placement Management, Live Classes, Course Management, Assessments, Coding Practice, Progress Tracking, Certificate Generation, Internship Management, Attendance, Announcements, AI-powered learning assistance, and analytics. Built with a scalable microservice-ready architecture, the system ensures high performance, security, responsive design, and seamless user experience for students, trainers, recruiters, and administrators.",
-  image:
-    "/Nexgenbr.png",
-  url: "https://nexgenbrtechnologies.com/",
-  technologies: [
-    "Next.js",
-    "Pnpm",
-    "TypeScript",
-    "Tailwind CSS",
-    "MongoDB",
-    "JWT Authentication",
-    "REST APIs",
-    "Role-Based Access Control",
-    "Admin Dashboard",
-    "Learning Management System",
-    "Placement Management",
-    "Analytics Dashboard",
-    "Cloud Deployment",
-    "Responsive UI"
-  ],
-}
-  ],
+  {
+    id: "devrath-industries",
+    title: "Devrath Industries Pvt. Ltd.",
+    category: "Web Development",
+    src: "/Devrath.jpeg",
+    alt: "Devrath Industries Pvt. Ltd. Website",
+
+    description:
+      "A modern corporate website designed for a leading manufacturer of fire-rated and security doors.",
+
+    overview:
+      "We developed a modern and professional corporate website for Devrath Industries Pvt. Ltd., a leading manufacturer of fire-rated and security doors. The website showcases the company's products, manufacturing capabilities, and industry expertise through a clean, responsive, and user-friendly digital experience.",
+
+    duration: "3 Months",
+    client: "Devrath Industries Pvt. Ltd.",
+
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+    ],
+
+    features: [
+      "Modern corporate website design",
+      "Product showcase and categorization",
+      "Responsive design for all devices",
+      "Contact and inquiry management",
+    ],
+
+    results:
+      "The new website established a strong digital presence for Devrath Industries and provided a professional platform to showcase their fire-rated and security door solutions to potential customers.",
+
+    completed: "2025",
+
+    url: "https://www.devrathindustries.com/",
+  },
+
+  {
+    id: "sun-energy-systems",
+    title: "SunEnergySystems",
+    category: "Web Development",
+    src: "/SunEnergy.jpeg",
+    alt: "SunEnergySystems Website",
+
+    description:
+      "A modern renewable energy website designed to promote solar energy solutions and services.",
+
+    overview:
+      "We designed and developed a modern website for SunEnergySystems to showcase their renewable energy services and solar solutions. The platform focuses on clear communication, intuitive navigation, and a responsive user experience across desktop, tablet, and mobile devices.",
+
+    duration: "2 Months",
+    client: "SunEnergySystems",
+
+    technologies: [
+      "Next.js",
+      "Express",
+      "PostgreSQL",
+    ],
+
+    features: [
+      "Modern renewable energy website",
+      "Solar services and solutions showcase",
+      "Responsive design across all devices",
+      "Intuitive user experience and navigation",
+    ],
+
+    results:
+      "The website provides SunEnergySystems with a professional digital platform to promote renewable energy solutions, communicate their services, and connect with potential customers.",
+
+    completed: "2025",
+
+    url: "https://sunenergysystem.vercel.app/",
+  },
+
+  {
+    id: "nexgenbr-technologies",
+    title: "NexGenBR Technologies",
+    category: "EdTech & Software Development",
+    src: "/Nexgenbr.png",
+    alt: "NexGenBR Technologies Platform",
+
+    description:
+      "A next-generation EdTech and Software Development platform connecting education with industry through a powerful LMS and enterprise management ecosystem.",
+
+    overview:
+      "NexGenBR Technologies is a next-generation EdTech and Software Development platform designed to bridge the gap between education and industry. The platform includes a powerful Learning Management System (LMS), role-based Admin Dashboard, Student and Trainer Portals, Placement Management, Live Classes, Course Management, Assessments, Coding Practice, Progress Tracking, Certificate Generation, Internship Management, Attendance, Announcements, AI-powered learning assistance, and analytics. Built with a scalable microservice-ready architecture, the system focuses on performance, security, responsive design, and a seamless experience for students, trainers, recruiters, and administrators.",
+
+    duration: "12+ Months",
+    client: "NexGenBR Technologies",
+
+    technologies: [
+      "Next.js",
+      "PNPM",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "JWT Authentication",
+      "REST APIs",
+      "Role-Based Access Control",
+      "Admin Dashboard",
+      "Learning Management System",
+      "Placement Management",
+      "Analytics Dashboard",
+      "Cloud Deployment",
+      "Responsive UI",
+    ],
+
+    features: [
+      "Learning Management System (LMS)",
+      "Role-based Admin Dashboard",
+      "Student and Trainer Portals",
+      "Placement Management System",
+      "Live Classes and Course Management",
+      "Assessments and Coding Practice",
+      "Progress Tracking and Certificate Generation",
+      "Internship and Attendance Management",
+      "Announcements and Notifications",
+      "AI-powered Learning Assistance",
+      "Analytics and Reporting Dashboard",
+      "Scalable and secure architecture",
+    ],
+
+    results:
+      "The platform brings education, training, placements, internships, and industry interaction together in one scalable ecosystem. Its modular architecture enables organizations to manage learning, users, courses, assessments, placements, and analytics from a centralized platform.",
+
+    completed: "2025–2026",
+
+    url: "https://nexgenbrtechnologies.com/",
+  },
+
+  // Dummy projects can remain below
+  {
+    id: "mobile-banking-app",
+    title: "Mobile Banking App",
+    category: "Software Development",
+    src: "/mobile-banking-app.avif",
+    alt: "Mobile Banking App",
+
+    description:
+      "Secure and user-friendly mobile banking application with modern digital banking features.",
+
+    overview:
+      "A secure mobile banking application designed to provide users with a seamless digital banking experience.",
+
+    duration: "3 Months",
+    client: "SecureBank Corp.",
+
+    technologies: [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+    ],
+
+    features: [
+      "Biometric authentication",
+      "Real-time transaction monitoring",
+      "Bill payment and fund transfers",
+      "Personalized financial insights",
+    ],
+
+    results:
+      "Improved digital banking experience and increased user engagement.",
+
+    completed: "January 2023",
+
+    url: "#",
+  },
+
+  {
+    id: "product-brochure",
+    title: "Product Brochure",
+    category: "Design Services",
+    src: "/design.avif",
+    alt: "Product Brochure",
+
+    description:
+      "Elegant product brochure design that effectively showcases product features and benefits.",
+
+    overview:
+      "A professional product brochure designed to present products and services effectively.",
+
+    duration: "1 Month",
+    client: "ProductX Company",
+
+    technologies: [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Figma",
+    ],
+
+    features: [
+      "Professional product photography",
+      "Compelling copywriting",
+      "Brand-aligned design elements",
+      "Print and digital versions",
+    ],
+
+    results:
+      "Improved product presentation and increased customer inquiries.",
+
+    completed: "January 2023",
+
+    url: "#",
+  },
+
+  {
+    id: "social-media-campaign",
+    title: "Social Media Campaign",
+    category: "Digital Marketing",
+    src: "/tech.avif",
+    alt: "Social Media Campaign",
+
+    description:
+      "Integrated social media campaign focused on increasing engagement and conversions.",
+
+    overview:
+      "A complete social media campaign focused on content creation, community engagement, targeted advertising, and digital growth.",
+
+    duration: "3 Months",
+    client: "SocialBrand Agency",
+
+    technologies: [
+      "Content Strategy",
+      "Social Media Marketing",
+      "Analytics",
+    ],
+
+    features: [
+      "Content creation and scheduling",
+      "Community management",
+      "Targeted advertising campaigns",
+      "Performance analytics and reporting",
+    ],
+
+    results:
+      "Increased engagement, followers, and website traffic through social media channels.",
+
+    completed: "January 2023",
+
+    url: "#",
+  },
+],
+
 
   // Team members
   team_members: [
     {
       name: "Greenkumar Bisen",
       role: "Founder & CEO",
-      image: "?q=80&w=1974&auto=format&fit=crop",
+      image: "/placeholder.svg",
       bio: "Visionary leader with over 4+ years of experience in the technology industry.",
     },
 /*{

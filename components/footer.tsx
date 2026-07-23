@@ -369,17 +369,19 @@ export function Footer() {
               &copy; {new Date().getFullYear()} ACUSTARD TECHNOLOGIES. All rights reserved. Founded by Greenkumar
               Bisen.
             </p>
-            <p className="text-xs text-muted-foreground">
-              Images provided by{" "}
-              <a
-                href="https://www.freepik.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-700 transition-colors duration-300"
-              >
-                Freepik
+            <div className="flex gap-4 text-sm text-muted-foreground">
+              <a href="#" className="hover:text-primary transition-colors">
+                Privacy Policy
               </a>
-            </p>
+              <span>•</span>
+              <a href="#" className="hover:text-primary transition-colors">
+                Terms of Service
+              </a>
+              <span>•</span>
+              <a href="#" className="hover:text-primary transition-colors">
+                Sitemap
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,16 +1,81 @@
-/* Ensure AI assistant is visible */
 .ai-assistant-button {
   position: fixed !important;
   bottom: 6rem !important;
   right: 1.5rem !important;
   z-index: 9999 !important;
+
+  width: 4.5rem !important;
+  height: 4.5rem !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 3.5rem !important;
-  height: 3.5rem !important;
-  border-radius: 9999px !important;
-  background-color: #2351b7 !important;
-  color: white !important;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+
+  animation: assistant-left-right 2.5s ease-in-out infinite !important;
+}
+
+.ai-assistant-button img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* Left to Right movement */
+@keyframes assistant-left-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-12px);
+  }
+}
+.assistant-wrapper {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 6rem;
+  z-index: 9999;
+}
+
+.assistant-hi {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 4.8rem;
+
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+
+  background: #111827;
+  color: white;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  animation: hi-pop 3s ease-in-out infinite;
+}
+
+@keyframes hi-pop {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  20%,
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    opacity: 0;
+  }
 }

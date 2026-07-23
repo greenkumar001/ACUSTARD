@@ -46,7 +46,7 @@ export function ProjectShowcase() {
 
       <div className="relative aspect-video">
         <Image
-          src={currentProject.image || "/placeholder.svg"}
+          src={currentProject.src || "/placeholder.svg"}
           alt={currentProject.title}
           fill
           className="object-cover"

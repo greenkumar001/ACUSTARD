@@ -12,7 +12,7 @@ export default function GalleryPage() {
   const uniqueImages = new Map()
 
   // Add portfolio images
-  IMAGES.portfolio.forEach((project) => {
+  IMAGES.projects.forEach((project) => {
     if (!uniqueImages.has(project.src)) {
       uniqueImages.set(project.src, {
         src: project.src,
@@ -24,9 +24,9 @@ export default function GalleryPage() {
 
   // Add project showcase images
   IMAGES.projects.forEach((project) => {
-    if (!uniqueImages.has(project.image)) {
-      uniqueImages.set(project.image, {
-        src: project.image,
+    if (!uniqueImages.has(project.src)) {
+      uniqueImages.set(project.src, {
+        src: project.src,
         alt: project.title,
         category: "Projects",
       })
