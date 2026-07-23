@@ -16,7 +16,7 @@ import {
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { HeroSection } from "@/components/hero-section"
 import { Navbar } from "@/components/navbar"
@@ -27,6 +27,7 @@ import { ProjectShowcase } from "@/components/project-showcase"
 
 // Import the constants
 import { IMAGES } from "@/lib/constants"
+import { Testimonial } from "@/components/testimonial"
 
 export default function Home() {
   return (
@@ -595,51 +596,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-700/10 to-violet-600/10">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Clients Say</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Don't just take our word for it. Here's what our clients have to say about our services.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2">
-              <Card className="bg-muted/50">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <MessageSquare className="h-10 w-10 text-blue-700" />
-                    <div>
-                      <p className="text-lg font-medium">
-                        "Acustard Technologies transformed our business with their innovative software solutions. Their
-                        team was professional, responsive, and delivered beyond our expectations."
-                      </p>
-                      <p className="mt-2 text-sm text-muted-foreground">— T Harinkhede, CEO of Devrath technologies</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="bg-muted/50">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <MessageSquare className="h-10 w-10 text-violet-600" />
-                    <div>
-                      <p className="text-lg font-medium">
-                        "The digital marketing campaign designed by Acustard technologies increased our online visibility
-                        by 200%. Their strategic approach and attention to detail made all the difference."
-                      </p>
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        — Ritesh Patle, CEO of SunEnergySystems.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
+        <Testimonial />
         {/* Contact Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
           {/* Background decorative elements */}
