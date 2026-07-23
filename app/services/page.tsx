@@ -8,7 +8,12 @@ import { Footer } from "@/components/footer"
 
 // Import the constants
 import { IMAGES } from "@/lib/constants"
-
+import { Metadata } from "next"
+export const metadata: Metadata = {
+  title: "Software Development & IT Services",
+  description:
+    "Explore professional software development, website development, mobile app development, AI, SEO and digital marketing services by Acustard Technologies.",
+}
 export default function ServicesPage() {
   return (
     <div className="flex min-h-screen flex-col">
