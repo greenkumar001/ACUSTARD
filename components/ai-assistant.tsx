@@ -153,18 +153,43 @@ export function AiAssistant() {
               </CardHeader>
 
               <CardContent className="p-0">
-                <div className="h-80 overflow-y-auto p-4 backdrop-blur-sm bg-white/80">
+                <div className="h-80
+      overflow-y-auto
+      p-4
+      bg-white
+      text-gray-900
+      dark:bg-gray-900
+      dark:text-gray-100">
                   {messages.map((message) => (
                     <div
                       key={message.id}
                       className={`mb-4 flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
                     >
                       <div
-                        className={`max-w-[80%] rounded-lg px-4 py-2 ${message.sender === "user" ? "bg-blue-700 text-white" : "bg-muted"
+                        className={` max-w-[80%]
+            rounded-2xl
+            px-4
+            py-2.5
+            shadow-sm ${message.sender === "user"
+                            ? `
+                  rounded-br-md
+                  bg-blue-600
+                  text-white
+                `
+                            : `
+                  rounded-bl-md
+                  border
+                  border-gray-200
+                  bg-gray-100
+                  text-gray-900
+                  dark:border-gray-700
+                  dark:bg-gray-800
+                  dark:text-gray-100
+                `
                           }`}
                       >
-                        <p className="text-sm">{message.content}</p>
-                        <p className="text-xs mt-1 opacity-70">
+                        <p className="text-sm leading-relaxed">{message.content}</p>
+                        <p className="mt-1 text-right text-[10px] opacity-60">
                           {message.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                         </p>
                       </div>
@@ -173,20 +198,23 @@ export function AiAssistant() {
 
                   {isTyping && (
                     <div className="mb-4 flex justify-start">
-                      <div className="max-w-[80%] rounded-lg px-4 py-2 bg-muted">
-                        <div className="flex space-x-1">
-                          <div
-                            className="h-2 w-2 rounded-full bg-gray-400 animate-bounce"
-                            style={{ animationDelay: "0ms" }}
-                          ></div>
-                          <div
-                            className="h-2 w-2 rounded-full bg-gray-400 animate-bounce"
-                            style={{ animationDelay: "150ms" }}
-                          ></div>
-                          <div
-                            className="h-2 w-2 rounded-full bg-gray-400 animate-bounce"
-                            style={{ animationDelay: "300ms" }}
-                          ></div>
+                      <div
+                        className="
+            rounded-2xl
+            rounded-bl-md
+            border
+            border-gray-200
+            bg-gray-100
+            px-4
+            py-3
+            dark:border-gray-700
+            dark:bg-gray-800
+          "
+                      >
+                        <div className="flex items-center gap-1">
+                          <span className="h-2 w-2 animate-bounce rounded-full bg-gray-500 dark:bg-gray-400" />
+                          <span className="h-2 w-2 animate-bounce rounded-full bg-gray-500 dark:bg-gray-400 [animation-delay:150ms]" />
+                          <span className="h-2 w-2 animate-bounce rounded-full bg-gray-500 dark:bg-gray-400 [animation-delay:300ms]" />
                         </div>
                       </div>
                     </div>
@@ -196,7 +224,12 @@ export function AiAssistant() {
                 </div>
               </CardContent>
 
-              <CardFooter className="p-2 border-t">
+              <CardFooter className="
+    border-gray-200
+    bg-white
+    p-3
+    dark:border-gray-700
+    dark:bg-gray-950">
                 <form
                   className="flex w-full gap-2"
                   onSubmit={(e) => {
@@ -208,18 +241,36 @@ export function AiAssistant() {
                     placeholder="Type your message..."
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
-                    className="flex-1"
+                    className="
+        h-10
+        flex-1
+        border-gray-300
+        bg-gray-100
+        text-gray-900
+        placeholder:text-gray-500
+        dark:border-gray-700
+        dark:bg-gray-800
+        dark:text-white
+        dark:placeholder:text-gray-400
+      "
                   />
                   <Button
                     type="submit"
                     size="icon"
-                    className="ai-assistant-button"
+                    className="ai-assistant-button h-10
+        w-10
+        shrink-0
+        rounded-lg
+        bg-blue-600
+        text-white
+        hover:bg-blue-700
+        disabled:opacity-50"
                     disabled={!inputValue.trim()}
                   > <img
                       src="/assistant.png"
                       alt="Acustard AI Assistant"
                     />
-                    {/* <Send className="h-4 w-4" /> */}
+                    <Send className="h-4 w-4" />
                   </Button>
                 </form>
               </CardFooter>

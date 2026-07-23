@@ -56,7 +56,7 @@ export default function ContactPage() {
                   <div className="relative h-24 w-24 overflow-hidden rounded-lg">
                     <Image
                       src={IMAGES.logo || "/placeholder.svg"}
-                      alt="acustard TECHNOLOGIES Logo"
+                      alt="Acustard technologies Logo"
                       fill
                       className="object-contain"
                     />
@@ -163,7 +163,7 @@ export default function ContactPage() {
                             href="mailto:acustardtechnologies@gmail.com"
                             className="hover:text-acustard-violet transition-colors duration-300"
                           >
-                            support@acustardtech.com
+                            info@acustardtechnologies.com
                           </Link>
                         </p>
                       </div>

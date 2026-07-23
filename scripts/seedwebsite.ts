@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import * as cheerio from "cheerio";
 
 const MONGODB_URI = process.env.MONGODB_URI;
-const BASE_URL = "https://acustardtech.vercel.app";
+const BASE_URL = "https://www.acustardtechnologies.com";
 
 const pages = [
   "/",

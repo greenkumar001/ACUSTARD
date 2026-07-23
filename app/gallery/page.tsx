@@ -37,7 +37,7 @@ export default function GalleryPage() {
   if (!uniqueImages.has(IMAGES.office)) {
     uniqueImages.set(IMAGES.office, {
       src: IMAGES.office,
-      alt: "ACUSTARD TECHNOLOGY Office",
+      alt: "Acustard technologies Office",
       category: "Company",
     })
   }
@@ -45,7 +45,7 @@ export default function GalleryPage() {
   if (!uniqueImages.has(IMAGES.team)) {
     uniqueImages.set(IMAGES.team, {
       src: IMAGES.team,
-      alt: "ACUSTARD TECHNOLOGY Team",
+      alt: "Acustard technologies Team",
       category: "Company",
     })
   }
@@ -111,7 +111,7 @@ export default function GalleryPage() {
                   <div className="relative h-12 w-12">
                     <Image
                       src={IMAGES.logo || "/placeholder.svg"}
-                      alt="ACUSTARD TECHNOLOGY Logo"
+                      alt="Acustard technologies Logo"
                       fill
                       className="object-contain"
                     />

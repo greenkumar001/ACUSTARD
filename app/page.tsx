@@ -161,10 +161,10 @@ export default function Home() {
                   </div>
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  About ACUSTARD
+                  About Acustard Technologies
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed">
-                  Founded by Greenkumar Bisen, ACUSTARD is a forward-thinking IT company dedicated to
+                  Founded by Greenkumar Bisen, Acustard Technologies is a forward-thinking IT company dedicated to
                   delivering innovative solutions that drive business growth and digital transformation.
                 </p>
                 <ul className="space-y-2 mt-4">
@@ -235,117 +235,361 @@ export default function Home() {
         </section>
 
         {/* Technologies Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
-          {/* Background image */}
-          <div className="absolute inset-0 z-0">
-            {/* Update the background image in the Technologies Section */}
+        <section
+          aria-labelledby="technologies-heading"
+          className="
+    relative
+    w-full
+    overflow-hidden
+    bg-white
+    py-16
+    text-gray-900
+    dark:bg-gray-950
+    dark:text-white
+    sm:py-20
+    lg:py-28
+  "
+        >
+          {/* Background */}
+          <div className="pointer-events-none absolute inset-0 z-0">
             <Image
               src="/placeholder.svg?height=1080&width=1920"
-              alt="Technology background"
+              alt=""
               fill
-              className="object-cover opacity-5"
+              sizes="100vw"
+              className="object-cover opacity-[0.03] dark:opacity-[0.05]"
             />
           </div>
 
-          <div className="container px-4 md:px-6 relative z-10">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Technologies</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We leverage cutting-edge technologies to deliver exceptional results.
-                </p>
-              </div>
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+
+            {/* Section Header */}
+            <div className="mx-auto max-w-3xl text-center">
+              <h2
+                id="technologies-heading"
+                className="
+          text-3xl
+          font-bold
+          tracking-tight
+          text-gray-900
+          dark:text-white
+          sm:text-4xl
+          lg:text-5xl
+        "
+              >
+                Our Technologies
+              </h2>
+
+              <p
+                className="
+          mt-4
+          text-sm
+          leading-7
+          text-gray-600
+          dark:text-gray-400
+          sm:text-base
+          lg:text-lg
+        "
+              >
+                We leverage modern technologies and industry-leading tools
+                to build scalable, high-performance digital solutions.
+              </p>
             </div>
-            <Tabs defaultValue="web" className="mt-12 max-w-4xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="web">Web Development</TabsTrigger>
-                <TabsTrigger value="mobile">Mobile Development</TabsTrigger>
-                <TabsTrigger value="design">Design Tools</TabsTrigger>
+
+            {/* Technology Tabs */}
+            <Tabs
+              defaultValue="web"
+              className="mx-auto mt-10 w-full max-w-5xl sm:mt-14"
+            >
+
+              {/* Tabs Navigation */}
+              <TabsList
+                className="
+          grid
+          h-auto
+          w-full
+          grid-cols-1
+          gap-2
+          rounded-xl
+          bg-gray-100
+          p-2
+          dark:bg-gray-900
+          sm:grid-cols-3
+        "
+              >
+                <TabsTrigger
+                  value="web"
+                  className="
+            min-h-11
+            rounded-lg
+            px-3
+            py-2
+            text-sm
+            font-medium
+            text-gray-600
+            transition-all
+            data-[state=active]:bg-white
+            data-[state=active]:text-blue-600
+            data-[state=active]:shadow-sm
+            dark:text-gray-400
+            dark:data-[state=active]:bg-gray-800
+            dark:data-[state=active]:text-blue-400
+            sm:text-base
+          "
+                >
+                  Web Development
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value="mobile"
+                  className="
+            min-h-11
+            rounded-lg
+            px-3
+            py-2
+            text-sm
+            font-medium
+            text-gray-600
+            transition-all
+            data-[state=active]:bg-white
+            data-[state=active]:text-blue-600
+            data-[state=active]:shadow-sm
+            dark:text-gray-400
+            dark:data-[state=active]:bg-gray-800
+            dark:data-[state=active]:text-blue-400
+            sm:text-base
+          "
+                >
+                  Mobile Development
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value="design"
+                  className="
+            min-h-11
+            rounded-lg
+            px-3
+            py-2
+            text-sm
+            font-medium
+            text-gray-600
+            transition-all
+            data-[state=active]:bg-white
+            data-[state=active]:text-blue-600
+            data-[state=active]:shadow-sm
+            dark:text-gray-400
+            dark:data-[state=active]:bg-gray-800
+            dark:data-[state=active]:text-blue-400
+            sm:text-base
+          "
+                >
+                  Design Tools
+                </TabsTrigger>
               </TabsList>
-              <TabsContent value="web" className="p-4 bg-background rounded-lg mt-4 border">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Cpu className="h-8 w-8 text-blue-700" />
-                    </div>
-                    <span className="text-sm font-medium">React</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Layers className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Next.js</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Code className="h-8 w-8 text-blue-700" />
-                    </div>
-                    <span className="text-sm font-medium">Node.js</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <LayoutGrid className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Angular</span>
-                  </div>
+
+              {/* Web Development */}
+              <TabsContent
+                value="web"
+                className="
+          mt-5
+          rounded-2xl
+          border
+          border-gray-200
+          bg-white
+          p-4
+          shadow-sm
+          dark:border-gray-800
+          dark:bg-gray-900
+          sm:mt-6
+          sm:p-6
+        "
+              >
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6">
+                  {[
+                    { name: "React", icon: Cpu, color: "text-blue-600" },
+                    { name: "Next.js", icon: Layers, color: "text-violet-600" },
+                    { name: "Node.js", icon: Code, color: "text-blue-600" },
+                    { name: "Angular", icon: LayoutGrid, color: "text-violet-600" },
+                  ].map((tech) => {
+                    const Icon = tech.icon
+
+                    return (
+                      <div
+                        key={tech.name}
+                        className="
+                  flex
+                  min-h-32
+                  flex-col
+                  items-center
+                  justify-center
+                  gap-3
+                  rounded-xl
+                  border
+                  border-gray-200
+                  bg-gray-50
+                  p-4
+                  text-center
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-blue-500/40
+                  hover:shadow-md
+                  dark:border-gray-700
+                  dark:bg-gray-800
+                "
+                      >
+                        <div
+                          className="
+                    flex
+                    h-14
+                    w-14
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-gray-200
+                    dark:bg-gray-700
+                  "
+                        >
+                          <Icon className={`h-7 w-7 ${tech.color}`} />
+                        </div>
+
+                        <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                          {tech.name}
+                        </span>
+                      </div>
+                    )
+                  })}
                 </div>
               </TabsContent>
-              <TabsContent value="mobile" className="p-4 bg-background rounded-lg mt-4 border">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Cpu className="h-8 w-8 text-blue-700" />
-                    </div>
-                    <span className="text-sm font-medium">React Native</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Layers className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Flutter</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Code className="h-8 w-8 text-blue-700" />
-                    </div>
-                    <span className="text-sm font-medium">Swift</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <LayoutGrid className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Kotlin</span>
-                  </div>
+
+              {/* Mobile Development */}
+              <TabsContent
+                value="mobile"
+                className="
+          mt-5
+          rounded-2xl
+          border
+          border-gray-200
+          bg-white
+          p-4
+          shadow-sm
+          dark:border-gray-800
+          dark:bg-gray-900
+          sm:mt-6
+          sm:p-6
+        "
+              >
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6">
+                  {[
+                    { name: "React Native", icon: Cpu, color: "text-blue-600" },
+                    { name: "Flutter", icon: Layers, color: "text-violet-600" },
+                    { name: "Swift", icon: Code, color: "text-blue-600" },
+                    { name: "Kotlin", icon: LayoutGrid, color: "text-violet-600" },
+                  ].map((tech) => {
+                    const Icon = tech.icon
+
+                    return (
+                      <div
+                        key={tech.name}
+                        className="
+                  flex
+                  min-h-32
+                  flex-col
+                  items-center
+                  justify-center
+                  gap-3
+                  rounded-xl
+                  border
+                  border-gray-200
+                  bg-gray-50
+                  p-4
+                  text-center
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-blue-500/40
+                  hover:shadow-md
+                  dark:border-gray-700
+                  dark:bg-gray-800
+                "
+                      >
+                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700">
+                          <Icon className={`h-7 w-7 ${tech.color}`} />
+                        </div>
+
+                        <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                          {tech.name}
+                        </span>
+                      </div>
+                    )
+                  })}
                 </div>
               </TabsContent>
-              <TabsContent value="design" className="p-4 bg-background rounded-lg mt-4 border">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-4">
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Adobe XD</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Figma</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Photoshop</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
-                      <Palette className="h-8 w-8 text-violet-600" />
-                    </div>
-                    <span className="text-sm font-medium">Illustrator</span>
-                  </div>
+
+              {/* Design Tools */}
+              <TabsContent
+                value="design"
+                className="
+          mt-5
+          rounded-2xl
+          border
+          border-gray-200
+          bg-white
+          p-4
+          shadow-sm
+          dark:border-gray-800
+          dark:bg-gray-900
+          sm:mt-6
+          sm:p-6
+        "
+              >
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6">
+                  {[
+                    { name: "Adobe XD", icon: Palette },
+                    { name: "Figma", icon: Palette },
+                    { name: "Photoshop", icon: Palette },
+                    { name: "Illustrator", icon: Palette },
+                  ].map((tech) => {
+                    const Icon = tech.icon
+
+                    return (
+                      <div
+                        key={tech.name}
+                        className="
+                  flex
+                  min-h-32
+                  flex-col
+                  items-center
+                  justify-center
+                  gap-3
+                  rounded-xl
+                  border
+                  border-gray-200
+                  bg-gray-50
+                  p-4
+                  text-center
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-violet-500/40
+                  hover:shadow-md
+                  dark:border-gray-700
+                  dark:bg-gray-800
+                "
+                      >
+                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700">
+                          <Icon className="h-7 w-7 text-violet-600" />
+                        </div>
+
+                        <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                          {tech.name}
+                        </span>
+                      </div>
+                    )
+                  })}
                 </div>
               </TabsContent>
+
             </Tabs>
           </div>
         </section>
@@ -368,7 +612,7 @@ export default function Home() {
                     <MessageSquare className="h-10 w-10 text-blue-700" />
                     <div>
                       <p className="text-lg font-medium">
-                        "ACUSTARD TECHNOLOGY transformed our business with their innovative software solutions. Their
+                        "Acustard Technologies transformed our business with their innovative software solutions. Their
                         team was professional, responsive, and delivered beyond our expectations."
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground">— T Harinkhede, CEO of Devrath technologies</p>
@@ -382,7 +626,7 @@ export default function Home() {
                     <MessageSquare className="h-10 w-10 text-violet-600" />
                     <div>
                       <p className="text-lg font-medium">
-                        "The digital marketing campaign designed by ACUSTARD TECHNOLOGY increased our online visibility
+                        "The digital marketing campaign designed by Acustard technologies increased our online visibility
                         by 200%. Their strategic approach and attention to detail made all the difference."
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground">

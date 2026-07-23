@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 
 export function ContactForm() {
@@ -173,8 +174,46 @@ export function ContactForm() {
             </div>
 
             {/* Submit Button */}
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-black font-semibold py-2 transition-all hover:shadow-lg">
-              Submit Enquiry
+            <Button
+              type="submit"
+              className="
+    group
+    w-full
+    rounded-xl
+    border
+    border-blue-400/40
+    bg-gradient-to-r
+    from-blue-600
+    via-indigo-600
+    to-violet-600
+    py-3
+    text-base
+    font-semibold
+    text-white
+    shadow-lg
+    shadow-blue-500/25
+    transition-all
+    duration-300
+    hover:-translate-y-0.5
+    hover:from-blue-500
+    hover:via-indigo-500
+    hover:to-violet-500
+    hover:shadow-xl
+    hover:shadow-blue-500/40
+  "
+            >
+              <span>Submit Enquiry</span>
+
+              <ArrowRight
+                className="
+      ml-2
+      h-5
+      w-5
+      transition-transform
+      duration-300
+      group-hover:translate-x-1
+    "
+              />
             </Button>
 
             <p className="text-xs text-muted-foreground text-center">
