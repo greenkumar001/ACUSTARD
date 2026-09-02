@@ -28,6 +28,7 @@ import { ProjectShowcase } from "@/components/project-showcase"
 // Import the constants
 import { IMAGES } from "@/lib/constants"
 import { Testimonial } from "@/components/testimonial"
+import { PricingSection } from "@/components/pricing-section"
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <HeroSection />
+        <PricingSection />
 
         {/* Services Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-500/10 to-violet-500/10 relative overflow-hidden">
