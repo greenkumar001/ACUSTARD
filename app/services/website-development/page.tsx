@@ -12,6 +12,8 @@ import {
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 
 export const metadata = {
   title: "Website Development Company | Affordable Websites Starting ₹5,999",
@@ -158,6 +160,7 @@ const faqs = [
 export default function WebsiteDevelopmentPage() {
   return (
     <main className="overflow-hidden">
+      <Navbar />
 
       {/* HERO */}
       <section className="relative py-20 md:py-28">
@@ -633,7 +636,7 @@ export default function WebsiteDevelopmentPage() {
         </div>
 
       </section>
-
+      <Footer />
     </main>
   )
 }
