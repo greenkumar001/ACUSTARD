@@ -114,7 +114,7 @@ export function Footer() {
                   />
                 </div>
                 <span className="text-xl font-bold tracking-tight group-hover:bg-gradient-to-r group-hover:from-acustard-blue group-hover:to-acustard-violet group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                  ACUSTARD TECHNOLOGIES
+                  ACUSTARD TECHNOLOGIES PVT. LTD.
                 </span>
               </a>
               <p className="text-sm text-muted-foreground">
@@ -366,7 +366,7 @@ export function Footer() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} ACUSTARD TECHNOLOGIES. All rights reserved. Founded by Greenkumar
+              &copy; {new Date().getFullYear()} ACUSTARD TECHNOLOGIES PVT LTD. All rights reserved. Founded by Greenkumar
               Bisen.
             </p>
             <div className="flex gap-4 text-sm text-muted-foreground">

@@ -79,7 +79,7 @@ export default function AboutPage() {
                     xl:text-6xl
                   "
                 >
-                  About Acustard Technologies
+                  About Acustard Technologies Pvt. Ltd.
                 </h1>
 
                 <p
@@ -94,7 +94,7 @@ export default function AboutPage() {
                     lg:text-xl
                   "
                 >
-                  Acustard Technologies is a technology and software
+                  Acustard Technologies Pvt. Ltd. is a technology and software
                   solutions company helping businesses transform ideas
                   into reliable digital products and innovative technology
                   solutions.

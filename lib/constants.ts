@@ -277,8 +277,8 @@ export const IMAGES = {
     {
       name: "Greenkumar Bisen",
       role: "Founder & CEO",
-      image: "/placeholder.svg",
-      bio: "Visionary leader with over 4+ years of experience in the technology industry.",
+      image: "/Greenkumar.png",
+      bio: "Visionary leader with over 5+ years of experience in the technology industry.",
     },
 /*{
       name: "Jane Smith",
