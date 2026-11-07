@@ -48,6 +48,7 @@ const organizationJsonLd = {
       name: "Acustard Technologies",
       legalName: "Acustard Technologies Pvt Ltd",
       url: "https://www.acustardtechnologies.com",
+      logo: "https://www.acustardtechnologies.com/ACUSTARD.jpeg",
       description:
         "Acustard Technologies provides website development, custom software development, ERP solutions, mobile app development, AI solutions and digital services.",
     },
