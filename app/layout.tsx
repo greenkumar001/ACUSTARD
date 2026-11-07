@@ -69,7 +69,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.acustardtechnologies.com",
     siteName: "Acustard Technologies",
     title:
       "Acustard Technologies | Software Development & Digital Solutions",
