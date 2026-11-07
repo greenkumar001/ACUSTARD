@@ -286,6 +286,37 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* International Services */}
+        <section className="w-full border-y bg-muted/30 py-14 md:py-20">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                International Website & Software Development
+              </h2>
+              <p className="mt-4 leading-7 text-muted-foreground">
+                Acustard Technologies works remotely with businesses in the United States, United Kingdom and Australia.
+                Explore the information relevant to your region.
+              </p>
+            </div>
+            <div className="mx-auto mt-8 grid max-w-4xl gap-4 md:grid-cols-3">
+              {[
+                { name: "United States", href: "/usa-web-development" },
+                { name: "United Kingdom", href: "/uk-web-development" },
+                { name: "Australia", href: "/australia-web-development" },
+              ].map((region) => (
+                <Link
+                  key={region.href}
+                  href={region.href}
+                  className="group flex items-center justify-between rounded-xl border bg-background p-5 font-medium transition-colors hover:border-blue-700"
+                >
+                  {region.name}
+                  <ArrowRight className="h-4 w-4 text-blue-700 transition-transform group-hover:translate-x-1" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 relative">
           {/* Background image */}
