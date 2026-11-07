@@ -378,7 +378,7 @@ export function Footer() {
                 Terms of Service
               </a>
               <span>•</span>
-              <a href="#" className="hover:text-primary transition-colors">
+              <a href="/sitemap" className="hover:text-primary transition-colors">
                 Sitemap
               </a>
             </div>
