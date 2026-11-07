@@ -68,7 +68,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    locale: "en_IN",
+    locale: "en_US",
     url: "https://www.acustardtechnologies.com",
     siteName: "Acustard Technologies",
     title:
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Acustard Technologies | Software & Digital Solutions",
     description:
-      "Software development, website development, AI, mobile apps, SEO and digital solutions.",
+      "Web development, custom software, ERP, and digital solutions for businesses worldwide",
     images: ["/og-image.png"],
   },
 
@@ -103,10 +103,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
-  },
-
-  alternates: {
-    canonical: "https://www.acustardtechnologies.com",
   },
 }
 

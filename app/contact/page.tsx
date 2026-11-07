@@ -12,7 +12,16 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ContactForm } from "@/components/contact-form"
 import { IMAGES } from "@/lib/constants"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Contact Acustard Technologies",
+  description:
+    "Contact Acustard Technologies to discuss your website development, software, ERP, or digital transformation project.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 export default function ContactPage() {
   // Animation variants for staggered animations
   const containerVariants = {

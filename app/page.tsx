@@ -29,7 +29,16 @@ import { ProjectShowcase } from "@/components/project-showcase"
 import { IMAGES } from "@/lib/constants"
 import { Testimonial } from "@/components/testimonial"
 import { PricingSection } from "@/components/pricing-section"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Web Development & Software Solutions",
+  description:
+    "Acustard Technologies delivers professional website development, custom software, ERP solutions, and digital services for businesses in India and worldwide.",
+  alternates: {
+    canonical: "/",
+  },
+};
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">

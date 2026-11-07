@@ -8,7 +8,16 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
 import { IMAGES } from "@/lib/constants"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "About Acustard Technologies",
+  description:
+    "Learn about Acustard Technologies, our approach to software development, business technology, and digital solutions.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">

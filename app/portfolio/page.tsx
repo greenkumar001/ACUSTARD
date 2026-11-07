@@ -16,7 +16,16 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
 import { IMAGES } from "@/lib/constants"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Our Projects & Development Portfolio",
+  description:
+    "Explore websites and software projects developed by Acustard Technologies, including business websites and custom digital solutions.",
+  alternates: {
+    canonical: "/portfolio",
+  },
+};
 export default function PortfolioPage() {
   const portfolioProjects = IMAGES.projects
 
